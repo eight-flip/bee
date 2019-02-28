@@ -9,7 +9,7 @@
           お客様ひとりひとり特別なメニューで、知識豊富なトレーナーがエクササイズをご提案します。
         </p>
         <p class="subtitle">
-          <a href="#contact">体験お申込みはこちら</a>
+          <a href="#contact" class="button is-outlined is-white">体験お申込みはこちら</a>
         </p>
         <img src="~/assets/img/bee-gray.png" alt="bee" class="bee-gray">
       </div>
@@ -24,7 +24,7 @@
 
     .card {
       position: absolute;
-      bottom: 35%;
+      bottom: 50px;
       left: 0;
       width: calc(100vw - 20px);
       background-color: #0b0b0b;
