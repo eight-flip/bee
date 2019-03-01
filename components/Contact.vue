@@ -1,5 +1,5 @@
 <template>
-  <section class="section has-text-centered has-background-gray-light">
+  <section class="section has-text-centered">
     <div class="container">
       <h2 class="section-title is-3 is-spaced">お問い合わせ</h2>
       <p class="section-subtitle is-4">CONTACT</p>
@@ -37,7 +37,66 @@
         </div>
       </div>
 
-      <div class="box forms">
+      <div class="box forms has-background-grey-light">
+        <img src="~/assets/img/bee-grey-in-form.png" class="bg-img" alt="background">
+        <form action="">
+          <label class="label">お名前（ふりがな） <span class="required">必須</span></label>
+          <div class="field is-grouped">
+            <div class="control is-expanded">
+              <input class="input" type="text" placeholder="たなか">
+            </div>
+            <div class="control is-expanded">
+              <input class="input" type="text" placeholder="たろう">
+            </div>
+          </div>
+
+          <label class="label">メールアドレス <span class="required">必須</span></label>
+          <div class="field">
+            <div class="control is-expanded">
+              <input class="input" type="email" placeholder="tarou_kudan@gmail.com">
+            </div>
+          </div>
+
+          <label class="label">電話番号 <span class="is-size-7">ハイフンの入力は不要です。</span></label>
+          <div class="field">
+            <div class="control is-expanded">
+              <input class="input" type="email" placeholder="tarou_kudan@gmail.com">
+            </div>
+          </div>
+
+          <label class="label">希望サービス <span class="required">必須</span></label>
+          <div class="field">
+            <div class="control is-normal">
+              <label class="checkbox">
+                <input type="checkbox">
+                体験レッスン
+              </label>
+            </div>
+            <div class="control is-normal">
+              <label class="checkbox">
+                <input type="checkbox">
+                体験レッスン
+              </label>
+            </div>
+
+            <hr>
+
+            <div class="field">
+              <div class="control">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <a href="#">利用規約</a>、及び<a href="#">個人情報の取扱</a>に同意する <span class="required">必須</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="field has-text-centered">
+              <button type="submit" class="button is-blue submit">入力内容を確認する</button>
+            </div>
+
+          </div>
+
+        </form>
 
       </div>
 
@@ -47,6 +106,17 @@
 
 <style lang="scss" scoped>
   @import "~assets/scss/_variables.scss";
+  .forms {
+    position: relative;
+    .bg-img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      max-width: 590px;
+      width: 80%;
+    }
+  }
+
   
   .box {
     -webkit-border-radius: 0;
@@ -94,10 +164,67 @@
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 0;
+
+    .box-header .columns {
+      margin: 0;
+    }
   }
 
   .steps .active {
     background-color: rgba(248, 100, 43, 0.08);
     color: #f8642b;
+  }
+  
+  .forms {
+    text-align: left;
+
+    .input {
+      border-radius: 0;
+      border: none;
+      font-size: 16px;
+      height: 40px;
+      &::placeholder {
+        color: #bcbcbc;
+      }
+    }
+
+    hr {
+      background-color: #e3e3e3;
+    }
+  }
+
+  .checkbox {
+    font-weight: bold;
+  }
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    background: url('~assets/img/checkbox.png') left top;
+    margin-right: 10px;
+  }
+
+  input[type="checkbox"]:checked::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 22px;
+    height: 22px;
+    background: url('~assets/img/check-mark.png');
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .submit {
+    width: 90%;
+    max-width: 300px;
+    font-weight: bold;
+    margin-top: 32px;
+    margin-bottom: 80px;
   }
 </style>

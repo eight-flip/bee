@@ -11,7 +11,7 @@
         <p class="subtitle">
           <a href="#contact" class="button is-outlined is-white">体験お申込みはこちら</a>
         </p>
-        <img src="~/assets/img/bee-gray.png" alt="bee" class="bee-gray">
+        <img src="~/assets/img/bee-grey.png" alt="bee" class="bee-grey">
       </div>
     </div>
 
@@ -44,7 +44,7 @@
 
       .card-footer {
         border: none;
-        .bee-gray {
+        .bee-grey {
           width: 100%;
         }
       }

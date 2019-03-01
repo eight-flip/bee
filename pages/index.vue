@@ -8,6 +8,8 @@
     <Conversion></Conversion>
     <Access></Access>
     <Contact></Contact>
+    <Faq></Faq>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -19,6 +21,8 @@ import Conversion from '~/components/Conversion.vue'
 import Price from '~/components/Price.vue'
 import Access from '~/components/Access.vue'
 import Contact from '~/components/Contact.vue'
+import Faq from '~/components/Faq.vue'
+import Footer from '~/components/Footer.vue'
 
 export default {
   components: {
@@ -29,6 +33,8 @@ export default {
     Price,
     Access,
     Contact,
+    Faq,
+    Footer,
   }
 }
 </script>

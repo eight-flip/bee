@@ -1,12 +1,14 @@
+@import "~bulma/sass/utilities/mixins";
 .button {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  $pad: 24px;
-  padding: $pad;
   $font-size: 18px;
-  height: $font-size + ($pad * 2);
-  font-size: $font-size;
+  font-size: 18px;
+  height: 62px;
+  @include tablet() {
+    height: 90px;
+  }
 
   &.is-blue {
     background-color: #487aac;

@@ -1,5 +1,5 @@
 <template>
-  <section class="section has-text-centered has-background-gray-light">
+  <section class="section has-text-centered">
     <div class="container">
       <h2 class="section-title is-3 is-spaced">Beeとは？</h2>
       <p class="section-subtitle is-4">ABOUT</p>
