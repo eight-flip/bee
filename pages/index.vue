@@ -10,6 +10,7 @@
     <Contact></Contact>
     <Faq></Faq>
     <Footer></Footer>
+    <Copyright></Copyright>
   </div>
 </template>
 
@@ -23,6 +24,7 @@ import Access from '~/components/Access.vue'
 import Contact from '~/components/Contact.vue'
 import Faq from '~/components/Faq.vue'
 import Footer from '~/components/Footer.vue'
+import Copyright from '~/components/Copyright.vue'
 
 export default {
   components: {
@@ -35,6 +37,7 @@ export default {
     Contact,
     Faq,
     Footer,
+    Copyright,
   }
 }
 </script>
