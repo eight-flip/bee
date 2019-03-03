@@ -40,7 +40,7 @@
 
         <div class="box forms has-background-grey-light">
           <img src="~/assets/img/bee-grey-in-form.png" class="bg-img" alt="background">
-          <form action="">
+          <form name="contact" method="POST" netlify>
             <label class="label">お名前（ふりがな） <span class="required">必須</span></label>
             <div class="field is-grouped">
               <div class="control is-expanded">
