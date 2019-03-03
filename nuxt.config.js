@@ -35,6 +35,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    {src: 'plugins/carousel.js', ssr: false} // Only works on client side
   ],
 
   /*
@@ -59,6 +60,7 @@ module.exports = {
     */
     extend(config, ctx) {
       
-    }
+    },
+    vendor: ['vue-carousel'],
   }
 }

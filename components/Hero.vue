@@ -1,7 +1,18 @@
 <template>
-  <section class="hero is-medium">
-    <img src="~/assets/img/hero-1.png" class="mv-img" alt="">
+  <section id="mv" class="hero is-medium">
+    <!--<img src="~/assets/img/hero-1.png" class="mv-img" alt="">-->
 
+    <carousel :per-page="1" :autoplay="true" :loop="true">
+      <slide>
+        <img src="~/assets/img/hero-1.jpg" class="mv-img" alt="">
+      </slide>
+      <slide>
+        <img src="~/assets/img/hero-1.jpg" class="mv-img" alt="">
+      </slide>
+      <slide>
+        <img src="~/assets/img/hero-1.jpg" class="mv-img" alt="">
+      </slide>
+    </carousel>
 
     <div class="card">
       <div class="card-content">
@@ -18,8 +29,20 @@
   </section>
 </template>
 
-<style lang="scss" scoped>
-  .hero {
+<script>
+  import Carousel from 'vue-carousel/src/Carousel.vue'
+  import Slide from 'vue-carousel/src/Slide.vue'
+
+  export default {
+    components: {
+      Carousel,
+      Slide,
+    },
+  }
+</script>
+
+<style lang="scss">
+  #mv.hero {
     position: relative;
 
     .card {
@@ -37,6 +60,7 @@
         letter-spacing: 0.36px;
         font-weight: bold;
       }
+
       .subtitle {
         color: #fff;
         font-size: 14px;
@@ -44,10 +68,27 @@
 
       .card-footer {
         border: none;
+
         .bee-grey {
           width: 100%;
         }
       }
+    }
+
+    .VueCarousel-pagination {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      text-align: right;
+    }
+
+    .VueCarousel-dot {
+      width: 12px;
+      height: 12px;
+      margin-bottom: 16px;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
     }
 
   }
