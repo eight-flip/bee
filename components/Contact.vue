@@ -44,24 +44,24 @@
             <label class="label">お名前（ふりがな） <span class="required">必須</span></label>
             <div class="field is-grouped">
               <div class="control is-expanded">
-                <input class="input" type="text" placeholder="たなか">
+                <input class="input" name="sei" type="text" placeholder="たなか">
               </div>
               <div class="control is-expanded">
-                <input class="input" type="text" placeholder="たろう">
+                <input class="input" name="mei" type="text" placeholder="たろう">
               </div>
             </div>
 
             <label class="label">メールアドレス <span class="required">必須</span></label>
             <div class="field">
               <div class="control is-expanded">
-                <input class="input" type="email" placeholder="tarou_kudan@gmail.com">
+                <input class="input" name="email" type="email" placeholder="tarou_kudan@gmail.com">
               </div>
             </div>
 
             <label class="label">電話番号 <span class="is-size-7">※ハイフンの入力は不要です。</span></label>
             <div class="field">
               <div class="control is-expanded">
-                <input class="input" type="email" placeholder="tarou_kudan@gmail.com">
+                <input class="input" name="tel" type="tel" placeholder="tarou_kudan@gmail.com">
               </div>
             </div>
 
@@ -69,14 +69,14 @@
             <div class="field">
               <div class="control is-normal">
                 <label class="checkbox">
-                  <input type="checkbox">
+                  <input name="hopes[]" type="checkbox">
                   体験レッスン
                 </label>
               </div>
               <div class="control is-normal">
                 <label class="checkbox">
-                  <input type="checkbox">
-                  体験レッスン
+                  <input name="hopes[]" type="checkbox">
+                  今すぐ入会したい
                 </label>
               </div>
 
@@ -85,7 +85,7 @@
               <div class="field">
                 <div class="control">
                   <label class="checkbox">
-                    <input type="checkbox">
+                    <input name="agreement" type="checkbox">
                     <a href="#">利用規約</a>、及び<a href="#">個人情報の取扱</a>に同意する <span class="required">必須</span>
                   </label>
                 </div>
