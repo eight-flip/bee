@@ -1,7 +1,7 @@
 {
-  "name": "Bee-hp",
+  "name": "パーソナルトレーニングスタジオ Bee",
   "version": "1.0.0",
-  "description": "My extraordinary Nuxt.js project",
+  "description": "パーソナルトレーニングスタジオBeeは九段下駅から徒歩3分の場所にあるパーソナルジムです。 加圧トレーニングは小さな負荷で大きな効果が期待できるとても画期的なトレーニング方法です。 当スタジオのスタッフ全員は加圧トレーニングを開発している会社から指導資格を取得している者なので安心して受講していただけます。",
   "author": "kskhr",
   "private": true,
   "scripts": {

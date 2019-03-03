@@ -61,6 +61,5 @@ module.exports = {
     extend(config, ctx) {
       
     },
-    vendor: ['vue-carousel'],
   }
 }
