@@ -13,6 +13,15 @@
   &.is-blue {
     background-color: #487aac;
     color: #fff;
+
+    @include tablet() {
+      height: 52px;
+      width: 270px;
+
+      & + &.is-blue {
+        margin-left: 10px;
+      }
+    }
   }
 
 

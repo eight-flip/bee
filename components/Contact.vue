@@ -40,28 +40,29 @@
 
         <div class="box forms has-background-grey-light">
           <img src="~/assets/img/bee-grey-in-form.png" class="bg-img" alt="background">
-          <form name="contact" method="POST" netlify>
+          <form action="/?thanks" name="contact" method="POST" ref="form" netlify>
             <label class="label">お名前（ふりがな） <span class="required">必須</span></label>
             <div class="field is-grouped">
               <div class="control is-expanded">
-                <input class="input" name="sei" type="text" placeholder="たなか">
+                <input class="input" type="text" placeholder="たなか" v-model="sei">
               </div>
               <div class="control is-expanded">
-                <input class="input" name="mei" type="text" placeholder="たろう">
+                <input class="input" type="text" placeholder="たろう" v-model="mei">
               </div>
+              <input type="hidden" name="お名前（ふりがな）" :value="fullName">
             </div>
 
             <label class="label">メールアドレス <span class="required">必須</span></label>
             <div class="field">
               <div class="control is-expanded">
-                <input class="input" name="email" type="email" placeholder="tarou_kudan@gmail.com">
+                <input class="input" name="メールアドレス" type="email" placeholder="tarou_kudan@gmail.com" v-model="email">
               </div>
             </div>
 
             <label class="label">電話番号 <span class="is-size-7">※ハイフンの入力は不要です。</span></label>
             <div class="field">
               <div class="control is-expanded">
-                <input class="input" name="tel" type="tel" placeholder="tarou_kudan@gmail.com">
+                <input class="input" name="電話番号" type="tel" placeholder="08012345678" v-model="tel">
               </div>
             </div>
 
@@ -69,13 +70,13 @@
             <div class="field">
               <div class="control is-normal">
                 <label class="checkbox">
-                  <input name="hopes[]" type="checkbox">
+                  <input name="希望サービス[]" type="checkbox" value="体験レッスン" v-model="hopes">
                   体験レッスン
                 </label>
               </div>
               <div class="control is-normal">
                 <label class="checkbox">
-                  <input name="hopes[]" type="checkbox">
+                  <input name="希望サービス[]" type="checkbox" value="今すぐ入会したい" v-model="hopes">
                   今すぐ入会したい
                 </label>
               </div>
@@ -85,14 +86,14 @@
               <div class="field">
                 <div class="control">
                   <label class="checkbox">
-                    <input name="agreement" type="checkbox">
+                    <input name="agreement" type="checkbox" v-model="agreement">
                     <a href="#">利用規約</a>、及び<a href="#">個人情報の取扱</a>に同意する <span class="required">必須</span>
                   </label>
                 </div>
               </div>
 
               <div class="field has-text-centered">
-                <button type="button" class="button is-blue confirm" @click="confirmModal = true">入力内容を確認する</button>
+                <button type="button" class="button is-blue confirm" @click="openConfirmModal();">入力内容を確認する</button>
               </div>
 
             </div>
@@ -140,64 +141,93 @@
         </div>
         <div class="box forms has-background-grey-light">
           <img src="~/assets/img/bee-grey-in-form.png" class="bg-img" alt="background">
-          <form name="contact" method="POST" netlify>
-            <label class="label">お名前（ふりがな） <span class="required">必須</span></label>
-            <div class="field is-grouped">
-              <div class="control is-expanded">
-                <input class="input" type="text" placeholder="たなか">
-              </div>
-              <div class="control is-expanded">
-                <input class="input" type="text" placeholder="たろう">
-              </div>
+          <label class="label">お名前（ふりがな） <span class="required">必須</span></label>
+          <p class="form-value">{{ fullName }}</p>
+
+          <label class="label">メールアドレス <span class="required">必須</span></label>
+          <p class="form-value">{{ email }}</p>
+
+          <label class="label">電話番号 <span class="is-size-7">※ハイフンの入力は不要です。</span></label>
+          <p class="form-value">{{ tel }}</p>
+
+          <label class="label">希望サービス <span class="required">必須</span></label>
+          <div class="field">
+            <div class="control is-normal">
+              <label class="checkbox">
+                <input type="checkbox" :checked="hopes[0]" disabled>
+                体験レッスン
+              </label>
             </div>
-
-            <label class="label">メールアドレス <span class="required">必須</span></label>
-            <div class="field">
-              <div class="control is-expanded">
-                <input class="input" type="email" placeholder="tarou_kudan@gmail.com">
-              </div>
+            <div class="control is-normal">
+              <label class="checkbox">
+                <input type="checkbox" :checked="hopes[1]" disabled>
+                今すぐ入会したい
+              </label>
             </div>
+          </div>
 
-            <label class="label">電話番号 <span class="is-size-7">※ハイフンの入力は不要です。</span></label>
-            <div class="field">
-              <div class="control is-expanded">
-                <input class="input" type="email" placeholder="tarou_kudan@gmail.com">
-              </div>
+          <hr>
+
+          <div class="field">
+            <div class="control">
+              <label class="checkbox">
+                <input type="checkbox" :checked="agreement" disabled>
+                <a href="#">利用規約</a>、及び<a href="#">個人情報の取扱</a>に同意する <span class="required">必須</span>
+              </label>
             </div>
+          </div>
 
-            <label class="label">希望サービス <span class="required">必須</span></label>
-            <div class="field">
-              <div class="control is-normal">
-                <label class="checkbox">
-                  <input type="checkbox">
-                  体験レッスン
-                </label>
-              </div>
-              <div class="control is-normal">
-                <label class="checkbox">
-                  <input type="checkbox">
-                  体験レッスン
-                </label>
-              </div>
+          <div class="field is-grouped is-grouped-centered is-grouped-multiline submit-area">
+            <button type="button" class="button is-blue" @click="confirmModal = false">入力画面に戻る</button>
+            <button type="button" class="button is-blue" @click="submitForm()">この内容で送信する</button>
+          </div>
 
-              <hr>
+        </div>
+      </div>
+    </div>
 
-              <div class="field">
-                <div class="control">
-                  <label class="checkbox">
-                    <input type="checkbox">
-                    <a href="#">利用規約</a>、及び<a href="#">個人情報の取扱</a>に同意する <span class="required">必須</span>
-                  </label>
+    <div class="modal" :class="{'is-active': thanksModal}">
+      <div class="modal-background" @click="confirmModal = false"></div>
+
+      <div class="modal-content">
+        <div class="box contact-box">
+          <div class="box-header">
+
+            <div class="columns steps is-mobile">
+              <div class="column">
+                <div class="box step-1">
+                  <span class="step-title">STEP1</span><br>
+                  <span class="step">お問い合わせ内容の入力</span>
                 </div>
               </div>
 
-              <div class="field has-text-centered">
-                <button type="button" class="button is-blue submit">入力内容を確認する</button>
+              <div class="column">
+                <div class="box step-2">
+                  <span class="step-title">STEP2</span><br>
+                  <span class="step">入力内容の確認</span>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="box step-3 active">
+                  <span class="step-title">STEP3</span><br>
+                  <span class="step">送信完了</span>
+                </div>
               </div>
 
             </div>
 
-          </form>
+          </div>
+        </div>
+        <div class="box forms has-background-grey-light">
+          <img src="~/assets/img/bee-grey-in-form.png" class="bg-img" alt="background">
+
+          <p class="thanks-msg">お問い合わせの内容を送信完了しました！<br>担当者からのご連絡をお待ちください。</p>
+          <img src="~/assets/img/complete-check.png" class="complete-check" alt="完了">
+
+          <div class="field is-grouped is-grouped-centered is-grouped-multiline submit-area">
+            <button type="button" class="button is-blue" @click="thanksModal = false">閉じる</button>
+          </div>
 
         </div>
       </div>
@@ -210,8 +240,36 @@
     data() {
       return {
         confirmModal: false,
+        sei: '',
+        mei: '',
+        email: '',
+        tel: '',
+        hopes: [],
+        agreement: false,
+        thanksModal: 'thanks' in this.$route.query ? true : false,
       };
     },
+    computed: {
+      fullName: function () {
+        return this.sei + ' ' + this.mei
+      },
+    },
+    methods: {
+      openConfirmModal: function() {
+        if (this.sei === ''
+          || this.mei === ''
+          || this.email === ''
+          || this.hopes.length === 0
+          || this.agreement === false) {
+          alert('入力されていない項目があります。');
+          return false;
+        }
+        this.confirmModal = true
+      },
+      submitForm: function() {
+        this.$refs.form.submit();
+      }
+    }
   }
 </script>
 
@@ -220,6 +278,14 @@
 
   .modal {
     position: fixed;
+    .modal-content {
+      max-height: calc(100vh - 40px);
+    }
+  }
+
+  .form-value {
+    margin-left: 1em;
+    margin-bottom: 30px;
   }
 
   .forms {
@@ -234,6 +300,23 @@
     }
   }
 
+  .field.is-grouped.is-grouped-multiline.submit-area {
+    margin-top: 60px;
+    margin-bottom: 36px;
+
+    @include mobile() {
+      .button {
+        width: 100%;
+      }
+      .button:nth-child(1) {
+        order: 2;
+        margin-top: 20px;
+      }
+      .button:nth-child(2) {
+        order: 1;
+      }
+    }
+  }
 
   .box {
     -webkit-border-radius: 0;
@@ -260,7 +343,14 @@
     -moz-border-radius: 2px;
     border-radius: 2px;
   }
-  
+
+  .steps .column {
+    display: flex;
+    .box {
+      width: 100%;
+    }
+  }
+
   @include mobile() {
     .section {
       padding-left: 0;
@@ -295,7 +385,6 @@
       font-size: 13px;
       font-weight: bold;
       line-height: 16px;
-      min-height: 2.4em;
     }
   }
 
@@ -369,5 +458,27 @@
     font-weight: bold;
     margin-top: 32px;
     margin-bottom: 80px;
+  }
+
+  .thanks-msg {
+    font-size: 22px;
+    font-family: Hiragino Sans;
+    @include mobile() {
+      font-size: 18px;
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .complete-check {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    @include mobile() {
+      width: 50%;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
   }
 </style>
