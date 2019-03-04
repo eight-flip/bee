@@ -40,65 +40,68 @@
 
         <div class="box forms has-background-grey-light">
           <img src="~/assets/img/bee-grey-in-form.png" class="bg-img" alt="background">
-          <form action="/?thanks" name="contact" method="POST" ref="form" netlify>
-            <label class="label">お名前（ふりがな） <span class="required">必須</span></label>
-            <div class="field is-grouped">
-              <div class="control is-expanded">
-                <input class="input" type="text" placeholder="たなか" v-model="sei">
-              </div>
-              <div class="control is-expanded">
-                <input class="input" type="text" placeholder="たろう" v-model="mei">
-              </div>
-              <input type="hidden" name="お名前（ふりがな）" :value="fullName">
-            </div>
-
-            <label class="label">メールアドレス <span class="required">必須</span></label>
-            <div class="field">
-              <div class="control is-expanded">
-                <input class="input" name="メールアドレス" type="email" placeholder="tarou_kudan@gmail.com" v-model="email">
-              </div>
-            </div>
-
-            <label class="label">電話番号 <span class="is-size-7">※ハイフンの入力は不要です。</span></label>
-            <div class="field">
-              <div class="control is-expanded">
-                <input class="input" name="電話番号" type="tel" placeholder="08012345678" v-model="tel">
-              </div>
-            </div>
-
-            <label class="label">希望サービス <span class="required">必須</span></label>
-            <div class="field">
-              <div class="control is-normal">
-                <label class="checkbox">
-                  <input name="希望サービス[]" type="checkbox" value="体験レッスン" v-model="hopes">
-                  体験レッスン
-                </label>
-              </div>
-              <div class="control is-normal">
-                <label class="checkbox">
-                  <input name="希望サービス[]" type="checkbox" value="今すぐ入会したい" v-model="hopes">
-                  今すぐ入会したい
-                </label>
+          <no-ssr>
+            <form action="/?thanks" name="contact" method="POST" ref="form" netlify>
+              <input type="hidden" name="form-name" value="contact">
+              <label class="label">お名前（ふりがな） <span class="required">必須</span></label>
+              <div class="field is-grouped">
+                <div class="control is-expanded">
+                  <input class="input" type="text" placeholder="たなか" v-model="sei">
+                </div>
+                <div class="control is-expanded">
+                  <input class="input" type="text" placeholder="たろう" v-model="mei">
+                </div>
+                <input type="hidden" name="お名前（ふりがな）" :value="fullName">
               </div>
 
-              <hr>
-
+              <label class="label">メールアドレス <span class="required">必須</span></label>
               <div class="field">
-                <div class="control">
-                  <label class="checkbox">
-                    <input name="agreement" type="checkbox" v-model="agreement">
-                    <a href="#">利用規約</a>、及び<a href="#">個人情報の取扱</a>に同意する <span class="required">必須</span>
-                  </label>
+                <div class="control is-expanded">
+                  <input class="input" name="メールアドレス" type="email" placeholder="tarou_kudan@gmail.com" v-model="email">
                 </div>
               </div>
 
-              <div class="field has-text-centered">
-                <button type="button" class="button is-blue confirm" @click="openConfirmModal();">入力内容を確認する</button>
+              <label class="label">電話番号 <span class="is-size-7">※ハイフンの入力は不要です。</span></label>
+              <div class="field">
+                <div class="control is-expanded">
+                  <input class="input" name="電話番号" type="tel" placeholder="08012345678" v-model="tel">
+                </div>
               </div>
 
-            </div>
+              <label class="label">希望サービス <span class="required">必須</span></label>
+              <div class="field">
+                <div class="control is-normal">
+                  <label class="checkbox">
+                    <input name="希望サービス[]" type="checkbox" value="体験レッスン" v-model="hopes">
+                    体験レッスン
+                  </label>
+                </div>
+                <div class="control is-normal">
+                  <label class="checkbox">
+                    <input name="希望サービス[]" type="checkbox" value="今すぐ入会したい" v-model="hopes">
+                    今すぐ入会したい
+                  </label>
+                </div>
 
-          </form>
+                <hr>
+
+                <div class="field">
+                  <div class="control">
+                    <label class="checkbox">
+                      <input name="agreement" type="checkbox" v-model="agreement">
+                      <a href="#">利用規約</a>、及び<a href="#">個人情報の取扱</a>に同意する <span class="required">必須</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="field has-text-centered">
+                  <button type="button" class="button is-blue confirm" @click="openConfirmModal();">入力内容を確認する</button>
+                </div>
+
+              </div>
+
+            </form>
+          </no-ssr>
 
         </div>
 
