@@ -33,6 +33,8 @@
 <style lang="scss" scoped>
   .triangle {
     position: relative;
+    padding-left: 3px;
+    padding-right: 3px;
 
     a {
       position: absolute;
@@ -69,12 +71,12 @@
     }
 
     .link-left {
-      left: -18px;
+      left: -15px;
       bottom: 55px;
     }
 
     .link-right {
-      right: -18px;
+      right: -15px;
       bottom: 55px;
     }
 
