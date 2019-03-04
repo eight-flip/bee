@@ -1,6 +1,18 @@
 <template>
   <section id="mv" class="hero is-medium">
-    <img src="~/assets/img/hero-1.png" class="mv-img" alt="">
+
+    <carousel :per-page="1" :autoplay="true" :loop="true">
+      <slide>
+        <img src="~/assets/img/hero-1.jpg" class="mv-img" alt="">
+      </slide>
+      <slide>
+        <img src="~/assets/img/hero-1.jpg" class="mv-img" alt="">
+      </slide>
+      <slide>
+        <img src="~/assets/img/hero-1.jpg" class="mv-img" alt="">
+      </slide>
+    </carousel>
+
 
     <div class="card">
       <div class="card-content">
@@ -16,6 +28,18 @@
 
   </section>
 </template>
+
+<script>
+  import Carousel from 'vue-carousel/src/Carousel.vue'
+  import Slide from 'vue-carousel/src/Slide.vue'
+
+  export default {
+    components: {
+      Carousel,
+      Slide,
+    },
+  }
+</script>
 
 <style lang="scss">
   #mv.hero {
