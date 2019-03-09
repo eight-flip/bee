@@ -15,21 +15,37 @@
         </js-accordion>
 
         <js-accordion>
-          <div class="header" slot="title"><span class="q-count">Q2</span><span class="q">どのくらい続けると効果がでますか？</span></div>
+          <div class="header" slot="title"><span class="q-count">Q2</span><span class="q">食事制限はありますか？</span></div>
           <div class="js-accordion--body" slot="body">
             <p class="a is-size-7">食事を減らすという食事制限ではなく、専門知識を持ったトレーナーが食事のバランスをアドバイスし、食生活を見直しながらコントロールしていきます。</p>
           </div>
         </js-accordion>
 
         <js-accordion>
-          <div class="header" slot="title"><span class="q-count">Q3</span><span class="q">どのくらい続けると効果がでますか？</span></div>
+          <div class="header" slot="title"><span class="q-count">Q3</span><span class="q">ウェアなどレンタルできますか？質問が2行以上の場合です。ウェアなどレンタルできます
+か？質問が2行以上の場合です。ウェアなどレンタルできますか？質問が2行以上の場合で
+す。ウェアなどレンタルできますか？？</span></div>
           <div class="js-accordion--body" slot="body">
             <p class="a is-size-7">食事を減らすという食事制限ではなく、専門知識を持ったトレーナーが食事のバランスをアドバイスし、食生活を見直しながらコントロールしていきます。</p>
           </div>
         </js-accordion>
 
         <js-accordion>
-          <div class="header" slot="title"><span class="q-count">Q4</span><span class="q">どのくらい続けると効果がでますか？</span></div>
+          <div class="header" slot="title"><span class="q-count">Q4</span><span class="q">入会までの流れを教えてください。</span></div>
+          <div class="js-accordion--body" slot="body">
+            <p class="a is-size-7">食事を減らすという食事制限ではなく、専門知識を持ったトレーナーが食事のバランスをアドバイスし、食生活を見直しながらコントロールしていきます。</p>
+          </div>
+        </js-accordion>
+
+        <js-accordion>
+          <div class="header" slot="title"><span class="q-count">Q5</span><span class="q">どのような支払い方法がありますか？</span></div>
+          <div class="js-accordion--body" slot="body">
+            <p class="a is-size-7">食事を減らすという食事制限ではなく、専門知識を持ったトレーナーが食事のバランスをアドバイスし、食生活を見直しながらコントロールしていきます。</p>
+          </div>
+        </js-accordion>
+
+        <js-accordion>
+          <div class="header" slot="title"><span class="q-count">Q5</span><span class="q">2人以上でレッスンを受けることはできますか？</span></div>
           <div class="js-accordion--body" slot="body">
             <p class="a is-size-7">食事を減らすという食事制限ではなく、専門知識を持ったトレーナーが食事のバランスをアドバイスし、食生活を見直しながらコントロールしていきます。</p>
           </div>
@@ -42,6 +58,7 @@
 
 <script>
   import jsAccordion from '~/components/parts/Accordion.vue';
+
   export default {
     components: {
       jsAccordion,
@@ -57,6 +74,8 @@
     background: url('~assets/img/bg-contact.png') no-repeat;
     background-size: cover;
     position: relative;
+    padding-bottom: 96px;
+
     &:before {
       background-color: rgba(0, 0, 0, 0.5);
       content: '';
@@ -70,16 +89,36 @@
     .section-title, .section-subtitle, .is-white {
       color: #fff;
     }
+
     .section-subtitle:before {
       background-color: #fff;
     }
   }
 
+  .container {
+    max-width: 800px;
+  }
+
   .js-accordion--body {
     background-color: #fff;
+
     .a {
+      text-align: left;
       padding: 15px;
+      font-weight: 500;
       font-family: '游ゴシック';
+      color: #000000;
+      @include tablet() {
+        padding: 24px;
+      }
+    }
+  }
+
+  .js-accordion {
+    .header {
+      .q {
+        font-size: 16px;
+      }
     }
   }
 </style>

@@ -41,6 +41,7 @@
 </script>
 
 <style lang="scss" scoped>
+  @import "~assets/scss/_variables.scss";
   .js-accordion {
     & + .js-accordion {
       margin-top: 18px;
@@ -53,14 +54,16 @@
     .header {
       display: flex;
       align-items: center;
+      line-height: 1;
 
       .q-count {
         font-size: 33px;
+        margin-top: -5px;
       }
 
       .q {
         font-size: 14px;
-        line-height: 20px;
+        line-height: 1.5;
         margin-left: 15px;
       }
 
@@ -84,7 +87,7 @@
       font-size: 20px;
       font-weight: bold;
       text-align: left;
-      padding: 20px 55px 20px 20px;
+      padding: 14px 55px 14px 22px;
       outline: none;
       border: none;
       cursor: pointer;
@@ -98,6 +101,9 @@
         position: absolute;
         top: 40%;
         right: 1em;
+        @include tablet() {
+          right: 1.5em;
+        }
         margin-top: -5px;
         transition: all .8s ease-in;
 

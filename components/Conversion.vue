@@ -1,16 +1,16 @@
 <template>
-  <section class="section has-text-centered has-background-grey-light">
+  <section class="section has-text-centered has-bg-img">
     <div class="card">
       <div class="card-header">
-        <p class="card-header-title">お得なレッスン<br>受付中です！</p>
+        <p class="card-header-title">お得なレッスン<br class="is-hidden-tablet">受付中です！</p>
       </div>
       <div class="card-content">
         <img src="~/assets/img/balloon-with-price.png" class="ballon-normal-price" alt="通常価格">
-        <img src="~/assets/img/special-price.png" alt="特別価格">
+        <img src="~/assets/img/special-price.png" class="special-price-img" alt="特別価格">
 
-        <p>パーソナルトレーニングを</p>
-        <p class="em light-blue-border"><span class="big-num">2</span>回体験できます！</p>
-        <p class="mt20 light-blue-border">いつでもお気軽にご相談ください！</p>
+        <p class="is-hidden-tablet">パーソナルトレーニングを</p>
+        <p class="em light-blue-border"><span class="is-hidden-mobile">パーソナルトレーニングを</span><span class="big-num">2</span>回体験できます！</p><br>
+        <p class="em2 mt20 light-blue-border">いつでもお気軽にご相談ください！</p>
 
         <div class="columns is-desktop mt15 mb0">
           <div class="column">
@@ -40,7 +40,20 @@
   @import "~assets/scss/_variables.scss";
   .section {
     padding: 36px 10px;
+    background: url('~assets/img/conversion-bg.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    &:before {
+      background-color: rgba(8, 21, 47, 0.6);
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
   }
+
   .card {
     $border: 2px;
     border: solid 15px #fff;
@@ -48,6 +61,14 @@
     padding: $border;
     color: $blue-dark;
     font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    @include tablet() {
+      width: 700px;
+    }
+    @include desktop() {
+      width: 960px;
+    }
   }
 
   .card-header {
@@ -58,15 +79,38 @@
     justify-content: center;
     font-size: 26px;
     color: $blue-dark;
+    @include tablet() {
+      font-size: 30px;
+      line-height: 1.4;
+      height: 86px;
+    }
   }
 
   .light-blue-border {
+    display: inline-block;
     border-bottom: 12px solid rgba(72, 122, 172, .1);
     line-height: .8;
   }
 
-  .ballon-normal-price {
-    margin: -37px auto 0;
+  .card-content {
+    position: relative;
+    .ballon-normal-price {
+      margin: -37px auto 0;
+      @include desktop() {
+        position: absolute;
+        width: 200px;
+        left: 4%;
+      }
+    }
+    .special-price-img {
+      width: 460px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      @include tablet() {
+        margin-bottom: 5px;
+      }
+    }
   }
 
   .em {
@@ -74,9 +118,26 @@
     line-height: 0.8;
   }
 
+  .em2 {
+    @include tablet() {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+  }
+
   .big-num {
     font-size: 52px;
     margin-right: 8px;
+    @include tablet() {
+      margin-left: 8px;
+    }
+  }
+
+  .button {
+    @include tablet() {
+      height: 96px;
+      font-size: 26px;
+    }
   }
 
 </style>

@@ -17,17 +17,6 @@ $size-7: 14px;
 @import "_fonts";
 @import "_util";
 
-
-// hero
-.hero {
-  .mv-img {
-    max-width: 100%;
-    height: calc(100vh - #{$navbar-height});
-    object-fit: cover;
-    object-position: 60% 0%;
-  }
-}
-
 .section {
   padding: 36px 15px;
 

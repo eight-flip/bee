@@ -31,10 +31,14 @@
 </template>
 
 <style lang="scss" scoped>
+  @import "~assets/scss/_variables.scss";
   .triangle {
     position: relative;
     padding-left: 3px;
     padding-right: 3px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
 
     a {
       position: absolute;
@@ -51,7 +55,7 @@
 
       span {
         position: absolute;
-        top: 35%;
+        top: 39%;
         bottom: 0;
         left: 0;
         right: 0;
@@ -61,6 +65,16 @@
         width: 70%;
         margin-left: auto;
         margin-right: auto;
+        @include until($for-iPhone5) {
+          font-size: 14px;
+        }
+        @include mobile() {
+          line-height: 1.1;
+        }
+        @include tablet() {
+          top: 40%;
+          font-size: 22px;
+        }
       }
     }
 
@@ -68,25 +82,66 @@
       top: 30px;
       left: 0;
       right: 0;
+      @include until($for-iPhone5) {
+        top: 25px;
+      }
+      @include tablet() {
+        top: 50px;
+      }
     }
 
     .link-left {
       left: -15px;
+      @include tablet() {
+        left: -45px;
+      }
+    }
+    .link-left, .link-right {
       bottom: 55px;
+      @include until($for-iPhone5) {
+        bottom: 42px;
+      }
+      @include tablet() {
+        bottom: 95px;
+      }
     }
 
     .link-right {
       right: -15px;
-      bottom: 55px;
+      @include tablet() {
+        right: -45px;
+      }
+
+      span {
+        @include tablet() {
+          top: 38%;
+        }
+      }
     }
 
     .triangle-img {
-      height: 130px;
       max-width: none;
+      height: auto;
+      width: 150px;
+      @include until($for-iPhone5) {
+        width: 125px;
+      }
+      @include tablet() {
+        width: 286px;
+      }
     }
 
     .bg {
-      /*width: 310px;*/
+      height: auto;
+    }
+  }
+  .triangle, .bg  {
+    width: 305px;
+    @include tablet() {
+      width: 565px;
+    }
+    @include until($for-iPhone5) {
+      width: 256px;
     }
   }
 </style>

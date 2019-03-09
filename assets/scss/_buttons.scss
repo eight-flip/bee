@@ -15,9 +15,6 @@
     color: #fff;
 
     @include tablet() {
-      height: 52px;
-      width: 270px;
-
       & + &.is-blue {
         margin-left: 10px;
       }
@@ -28,7 +25,7 @@
   &.is-outlined {
     background-color: transparent;
     border: solid 1px #333333;
-    font-family: '游ゴシック体';
+    font-family: '游ゴシック';
     height: 50px;
     font-weight: bold;
     padding: 14px 28px;
@@ -49,7 +46,16 @@
       position: absolute;
       border-bottom: 1px solid #333;
       border-right: 1px solid #333;
-      width: 90%;
+      width: 93%;
+      height: 93%;
+    }
+    &.has-right-border:after {
+      content: '';
+      top: 50%;
+      right: calc(-17% - 8px);
+      position: absolute;
+      border-top: 1px solid #fff;
+      width: 34%;
       height: 90%;
     }
 

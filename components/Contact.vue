@@ -5,13 +5,13 @@
         <h2 class="section-title is-3 is-spaced">お問い合わせ</h2>
         <p class="section-subtitle is-4">CONTACT</p>
 
-        <p class="is-size-7">各種お問い合わせはこちらからどうぞ。お気軽にご相談ください！</p>
+        <p class="is-size-7 mb25">各種お問い合わせはこちらからどうぞ。お気軽にご相談ください！</p>
 
 
         <div class="box contact-box">
           <div class="box-header">
 
-            <div class="columns steps is-mobile">
+            <div class="columns steps is-mobile inbox-container">
               <div class="column">
                 <div class="box step-1 active">
                   <span class="step-title">STEP1</span><br>
@@ -41,9 +41,10 @@
         <div class="box forms has-background-grey-light">
           <img src="~/assets/img/bee-grey-in-form.png" class="bg-img" alt="background">
           <no-ssr>
-            <form action="/?thanks" name="contact" method="POST" ref="form" netlify>
+            <form action="/?thanks" name="contact" method="POST" class="form inbox-container" ref="form" netlify>
               <input type="hidden" name="form-name" value="contact">
               <label class="label">お名前（ふりがな） <span class="required">必須</span></label>
+              <input type="hidden" name="お名前（ふりがな）" :value="fullName">
               <div class="field is-grouped">
                 <div class="control is-expanded">
                   <input class="input" type="text" placeholder="たなか" v-model="sei">
@@ -51,7 +52,6 @@
                 <div class="control is-expanded">
                   <input class="input" type="text" placeholder="たろう" v-model="mei">
                 </div>
-                <input type="hidden" name="お名前（ふりがな）" :value="fullName">
               </div>
 
               <label class="label">メールアドレス <span class="required">必須</span></label>
@@ -116,7 +116,7 @@
         <div class="box contact-box">
           <div class="box-header">
 
-            <div class="columns steps is-mobile">
+            <div class="columns steps is-mobile inbox-container">
               <div class="column">
                 <div class="box step-1">
                   <span class="step-title">STEP1</span><br>
@@ -143,41 +143,44 @@
           </div>
         </div>
         <div class="box forms has-background-grey-light">
-          <img src="~/assets/img/bee-grey-in-form.png" class="bg-img" alt="background">
-          <label class="label">お名前（ふりがな） <span class="required">必須</span></label>
-          <p class="form-value">{{ fullName }}</p>
+          <div class="form inbox-container">
+            <img src="~/assets/img/bee-grey-in-form.png" class="bg-img" alt="background">
+            <label class="label">お名前（ふりがな） <span class="required">必須</span></label>
+            <p class="form-value">{{ fullName }}</p>
 
-          <label class="label">メールアドレス <span class="required">必須</span></label>
-          <p class="form-value">{{ email }}</p>
+            <label class="label">メールアドレス <span class="required">必須</span></label>
+            <p class="form-value">{{ email }}</p>
 
-          <label class="label">電話番号 <span class="is-size-7">※ハイフンの入力は不要です。</span></label>
-          <p class="form-value">{{ tel }}</p>
+            <label class="label">電話番号 <span class="is-size-7">※ハイフンの入力は不要です。</span></label>
+            <p class="form-value">{{ tel }}</p>
 
-          <label class="label">希望サービス <span class="required">必須</span></label>
-          <div class="field">
-            <div class="control is-normal">
-              <label class="checkbox">
-                <input type="checkbox" :checked="hopes[0]" disabled>
-                体験レッスン
-              </label>
+            <label class="label">希望サービス <span class="required">必須</span></label>
+            <div class="field">
+              <div class="control is-normal">
+                <label class="checkbox">
+                  <input type="checkbox" :checked="hopes[0]" disabled>
+                  体験レッスン
+                </label>
+              </div>
+              <div class="control is-normal">
+                <label class="checkbox">
+                  <input type="checkbox" :checked="hopes[1]" disabled>
+                  今すぐ入会したい
+                </label>
+              </div>
             </div>
-            <div class="control is-normal">
-              <label class="checkbox">
-                <input type="checkbox" :checked="hopes[1]" disabled>
-                今すぐ入会したい
-              </label>
-            </div>
-          </div>
 
-          <hr>
+            <hr>
 
-          <div class="field">
-            <div class="control">
-              <label class="checkbox">
-                <input type="checkbox" :checked="agreement" disabled>
-                <a href="#">利用規約</a>、及び<a href="#">個人情報の取扱</a>に同意する <span class="required">必須</span>
-              </label>
+            <div class="field">
+              <div class="control">
+                <label class="checkbox">
+                  <input type="checkbox" :checked="agreement" disabled>
+                  <a href="#">利用規約</a>、及び<a href="#">個人情報の取扱</a>に同意する <span class="required">必須</span>
+                </label>
+              </div>
             </div>
+
           </div>
 
           <div class="field is-grouped is-grouped-centered is-grouped-multiline submit-area">
@@ -196,7 +199,7 @@
         <div class="box contact-box">
           <div class="box-header">
 
-            <div class="columns steps is-mobile">
+            <div class="columns steps is-mobile inbox-container">
               <div class="column">
                 <div class="box step-1">
                   <span class="step-title">STEP1</span><br>
@@ -223,13 +226,15 @@
           </div>
         </div>
         <div class="box forms has-background-grey-light">
-          <img src="~/assets/img/bee-grey-in-form.png" class="bg-img" alt="background">
+          <div class="form inbox-container">
+            <img src="~/assets/img/bee-grey-in-form.png" class="bg-img" alt="background">
 
-          <p class="thanks-msg">お問い合わせの内容を送信完了しました！<br>担当者からのご連絡をお待ちください。</p>
-          <img src="~/assets/img/complete-check.png" class="complete-check" alt="完了">
+            <p class="thanks-msg">お問い合わせ内容を送信完了しました！<br>担当者からのご連絡をお待ちください。</p>
+            <img src="~/assets/img/complete-check.png" class="complete-check" alt="完了">
 
-          <div class="field is-grouped is-grouped-centered is-grouped-multiline submit-area">
-            <button type="button" class="button is-blue" @click="thanksModal = false">閉じる</button>
+            <div class="field is-grouped is-grouped-centered is-grouped-multiline submit-area">
+              <button type="button" class="button is-blue" @click="thanksModal = false">閉じる</button>
+            </div>
           </div>
 
         </div>
@@ -243,12 +248,18 @@
     data() {
       return {
         confirmModal: false,
-        sei: '',
-        mei: '',
-        email: '',
-        tel: '',
-        hopes: [],
-        agreement: false,
+        // sei: '',
+        // mei: '',
+        // email: '',
+        // tel: '',
+        // hopes: [],
+        // agreement: false,
+        sei: 'たなか',
+        mei: 'たろう',
+        email: 'tanaka_kudan@example.com',
+        tel: '09012341234',
+        hopes: ['体験レッスン'],
+        agreement: true,
         thanksModal: 'thanks' in this.$route.query ? true : false,
       };
     },
@@ -278,7 +289,20 @@
 
 <style lang="scss" scoped>
   @import "~assets/scss/_variables.scss";
-
+  .section {
+    padding-bottom: 90px;
+    @include mobile() {
+      padding-bottom: 0;
+    }
+  }
+  .section-subtitle + p {
+      margin-left: 15px;
+      margin-right: 15px;
+  }
+  .button.is-blue {
+    height: 52px;
+    width: 270px;
+  }
   .modal {
     position: fixed;
     .modal-content {
@@ -325,6 +349,8 @@
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+    border: solid 1px #f2f3f5;
   }
 
   .steps .column {
@@ -352,6 +378,9 @@
     .box {
       width: 100%;
     }
+    .box.active {
+      border: none;
+    }
   }
 
   @include mobile() {
@@ -359,35 +388,72 @@
       padding-left: 0;
       padding-right: 0;
     }
-    .steps .column {
-      padding: 0;
+  }
+
+  .step {
+    margin-top: 6px;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 16px;
+    @include tablet() {
+      font-size: 14px;
+    }
+  }
+
+  .steps .column {
+    padding: 0;
+  }
+
+  .steps .box {
+    padding: 11px;
+    @include tablet() {
+      padding: 13px;
+    }
+  }
+
+  .steps > .column + .column {
+    margin-left: 20px;
+    position: relative;
+    @include tablet() {
+      margin-left: 35px;
     }
 
-    .steps > .column + .column {
-      margin-left: 20px;
-      position: relative;
-
-      &:before {
-        content: '';
-        background: url('~assets/img/arrow-right.png') no-repeat;
-        background-size: contain;
-        width: 18px;
-        height: 18px;
-        position: absolute;
-        left: -15px;
-        top: 38%;
+    &:before {
+      content: '';
+      background: url('~assets/img/arrow-right.png') no-repeat;
+      background-size: contain;
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      left: -15px;
+      top: 38%;
+      @include tablet() {
+        left: -22px;
       }
     }
-    .steps .box {
-      padding: 11px;
-    }
+  }
 
-    .step {
-      margin-top: 6px;
-      display: block;
-      font-size: 13px;
-      font-weight: bold;
-      line-height: 16px;
+  .box.contact-box, .box.forms, .modal-content {
+    @include desktop() {
+      width: 980px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .inbox-container {
+    @include desktop() {
+      width: 610px;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  }
+
+  .form.inbox-container {
+    @include desktop() {
+      padding-left: 50px;
+      padding-right: 50px;
     }
   }
 
@@ -397,15 +463,29 @@
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 0;
+    @include until($for-iPhone5) {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
 
     .box-header .columns {
       margin: 0;
     }
   }
 
-  .steps .active {
-    background-color: rgba(248, 100, 43, 0.08);
-    color: #f8642b;
+  .steps .box {
+    border: solid 1px #e6e6e6;
+    box-shadow: none;
+    border: solid 1px #e6e6e6;
+    background-color: #f7f7f7;
+    @include until($for-iPhone5) {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    &.active {
+      background-color: rgba(248, 100, 43, 0.08);
+      color: #f8642b;
+    }
   }
 
   .forms {
@@ -461,12 +541,20 @@
     font-weight: bold;
     margin-top: 32px;
     margin-bottom: 80px;
+    @include tablet() {
+      margin-bottom: 28px;
+    }
   }
 
   .thanks-msg {
     font-size: 22px;
     font-family: Hiragino Sans;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    text-align: center;
     @include mobile() {
+      margin-top: 30px;
+      margin-bottom: 10px;
       font-size: 18px;
       br {
         display: none;
@@ -478,6 +566,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 190px;
     @include mobile() {
       width: 50%;
       margin-top: 30px;
