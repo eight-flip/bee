@@ -38,7 +38,7 @@
           <div class="card">
             <header class="card-header">
               <p class="card-header-title">
-                <span class="num">30</span>
+                <span class="num">60</span>
                 <span class="training">分パーソナルトレーニング</span>
                 <span class="plus">+</span>
                 <span class="training">20分有酸素</span>
@@ -50,13 +50,13 @@
                   <img src="~/assets/img/menu-4-times.png" class="times-img is-pulled-left" alt="4回/月">
                   <div class="is-clearfix"></div>
                   <p class="price">¥25,000~ &nbsp;</p>
-                  <p class="is-size-7 pr15">※上記はDAY会員の料金です（平日昼12〜17時限定）</p>
+                  <p class="is-size-7 pr15">※終日利用OK</p>
                 </div>
                 <div class="column">
                   <img src="~/assets/img/menu-6-times.png" class="times-img is-pulled-left" alt="4回/月">
                   <div class="is-clearfix"></div>
                   <p class="price">¥37,500 &nbsp;</p>
-                  <p class="is-size-7 pl15">※上記はDAY会員の料金です（平日昼12〜17時限定）</p>
+                  <p class="is-size-7 pl15">※終日利用OK</p>
                 </div>
               </div>
             </div>
@@ -81,6 +81,10 @@
       position: relative;
     }
   }
+  .section-subtitle + p {
+    margin-top: 24px;
+    margin-bottom: 40px;
+  }
 
   @include mobile() {
     .columns:not(.is-mobile) > .column+.column {
@@ -102,9 +106,24 @@
         font-size: 20px;
         font-weight: normal;
         margin-right: 3px;
+        @include tablet() {
+          font-size: 26px;
+          line-height: 1;
+        }
+        @include desktop() {
+          font-size: 32px;
+        }
       }
       .training {
         font-size: 13px;
+        @include tablet() {
+          margin-top: 4px;
+          font-size: 15px;
+          line-height: 1;
+        }
+        @include desktop() {
+          font-size: 18px;
+        }
       }
       .plus {
         font-size: 16px;
@@ -126,6 +145,9 @@
       margin-right: auto;
       @include mobile() {
         width: 88px;
+      }
+      @include tablet() {
+        width: 135px;
       }
     }
 
@@ -155,10 +177,15 @@
       line-height: 1;
       margin-top: 24px;
       margin-bottom: 10px;
+      @include tablet() {
+        font-size: 30px;
+      }
+      @include desktop() {
+        font-size: 34px;
+      }
     }
-
-    .attention {
-
+    .price + p {
+      min-height: 3em;
     }
   }
 </style>

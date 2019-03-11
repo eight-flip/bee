@@ -9,6 +9,10 @@
   @include tablet() {
     height: 90px;
   }
+  &:hover {
+    opacity: 0.6 !important;
+    transition: opacity .3s;
+  }
 
   &.is-blue {
     background-color: #487aac;

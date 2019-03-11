@@ -2,7 +2,7 @@
   <section class="section has-text-centered has-bg-img">
     <div class="card">
       <div class="card-header">
-        <p class="card-header-title">お得なレッスン<br class="is-hidden-tablet">受付中です！</p>
+        <p class="card-header-title">お得な体験レッスン<br class="is-hidden-tablet">受付中です！</p>
       </div>
       <div class="card-content">
         <img src="~/assets/img/balloon-with-price.png" class="ballon-normal-price" alt="通常価格">
@@ -79,6 +79,10 @@
     justify-content: center;
     font-size: 26px;
     color: $blue-dark;
+    padding: 22px;
+    @include until($for-iPhone5) {
+      font-size: 24px;
+    }
     @include tablet() {
       font-size: 30px;
       line-height: 1.4;
@@ -95,7 +99,13 @@
   .card-content {
     position: relative;
     .ballon-normal-price {
-      margin: -37px auto 0;
+      margin: -45px auto 0;
+      @include mobile() {
+        width: 189px;
+      }
+      @include tablet() {
+        margin-top: -35px;
+      }
       @include desktop() {
         position: absolute;
         width: 200px;
@@ -107,7 +117,11 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
+      @include mobile() {
+        margin-top: -5px;
+      }
       @include tablet() {
+        margin-top: 10px;
         margin-bottom: 5px;
       }
     }
@@ -116,6 +130,7 @@
   .em {
     font-size: 28px;
     line-height: 0.8;
+    margin-top: -8px;
   }
 
   .em2 {

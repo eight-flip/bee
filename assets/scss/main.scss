@@ -17,6 +17,10 @@ $size-7: 14px;
 @import "_fonts";
 @import "_util";
 
+.navbar-item img {
+  max-height: none;
+}
+
 .section {
   padding: 36px 15px;
 
