@@ -1,11 +1,10 @@
 <template>
   <section class="section has-text-centered">
     <div class="container">
-      <h2 class="section-title is-3 is-spaced">施設紹介</h2>
-      <p class="section-subtitle is-4">STUDIO</p>
+      <h2 class="section-title is-3 is-spaced" data-aos="fade-up">施設紹介</h2>
+      <p class="section-subtitle is-4" data-aos="fade-up">STUDIO</p>
 
-      <div class="block block-1">
-        <!--<img src="~assets/img/studio-pc-1.png" class="studio-img pc img-1" alt="スタジオ写真1">-->
+      <div class="block block-1" data-aos="fade-up">
         <img src="~assets/img/studio-1.jpg" class="studio-img sp img-1" alt="スタジオ写真1">
         <div class="card is-black card-1">
           <div class="card-header">
@@ -22,7 +21,7 @@
       </div>
 
 
-      <div class="block block-2">
+      <div class="block block-2" data-aos="fade-up">
         <img src="~assets/img/studio-2.jpg" class="studio-img sp img-2" alt="スタジオ写真2">
         <div class="card is-black card-2">
           <div class="card-header">

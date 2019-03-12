@@ -1,16 +1,16 @@
 <template>
-  <section class="section has-text-centered">
+  <section id="about" class="section has-text-centered">
     <div class="container">
-      <h2 class="section-title is-3 is-spaced">Beeとは？</h2>
-      <p class="section-subtitle is-4">ABOUT</p>
+      <h2 class="section-title is-3 is-spaced" data-aos="fade-up">Beeとは？</h2>
+      <p class="section-subtitle is-4" data-aos="fade-up">ABOUT</p>
 
-      <h3 class="title is-3 mt30">綺麗な施設でさまざまなトレーニングを。エステメニューも充実。</h3>
+      <h3 class="title is-3 mt30" data-aos="fade-up">綺麗な施設でさまざまなトレーニングを。エステメニューも充実。</h3>
 
-      <p>
+      <p data-aos="fade-up">
         パーソナルトレーニングスタジオbeeでは事前に目標を設定し、その日のご体調に合わせたトレーニングメニューを知識豊富なトレーナー陣がマンツーマンでご提案します。また、清潔で明るいシャワールームとパウダールームをご用意しております。今まで運動が続かなかった方も、お客様にあった内容とペースで無理なく運動習慣が身に付きます。</p>
 
 
-      <div class="triangle">
+      <div class="triangle" data-aos="fade-up">
         <img src="~/assets/img/triangle.png" class="bg" alt="menu">
         <a href="#1" class="link-top">
           <img src="~/assets/img/triangle-top.png" class="triangle-img" alt="menu">
@@ -32,6 +32,11 @@
 
 <style lang="scss" scoped>
   @import "~assets/scss/_variables.scss";
+  .section {
+    @include tablet() {
+      margin-top: 85px;
+    }
+  }
   .triangle {
     position: relative;
     padding-left: 3px;

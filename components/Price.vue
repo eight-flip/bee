@@ -1,12 +1,12 @@
 <template>
   <section class="section has-text-centered has-background-grey-light">
     <div class="container">
-      <h2 class="section-title is-3 is-spaced">メニュー&料金</h2>
-      <p class="section-subtitle is-4">MENU&PRICE</p>
-      <p class="is-size-7">パーソナルトレーニングスタジオBeeでは、お客様一人ひとりに違うメニューをご提案しています。デイタイム、会社帰り、あなたのライフスタイルに合わせてお選び下さい。多種多様なメニューをご用意しております。</p>
+      <h2 class="section-title is-3 is-spaced" data-aos="fade-up">メニュー&料金</h2>
+      <p class="section-subtitle is-4" data-aos="fade-up">MENU&PRICE</p>
+      <p class="is-size-7" data-aos="fade-up">パーソナルトレーニングスタジオBeeでは、お客様一人ひとりに違うメニューをご提案しています。デイタイム、会社帰り、あなたのライフスタイルに合わせてお選び下さい。多種多様なメニューをご用意しております。</p>
 
       <div class="columns mb30">
-        <div class="column">
+        <div class="column" data-aos="fade-up">
           <div class="card">
             <header class="card-header">
               <p class="card-header-title">
@@ -34,7 +34,7 @@
             </div>
           </div>
         </div>
-        <div class="column">
+        <div class="column" data-aos="fade-up">
           <div class="card">
             <header class="card-header">
               <p class="card-header-title">
@@ -64,7 +64,7 @@
         </div>
       </div>
 
-      <a href="#" class="button is-outlined">メニューをもっと詳しく見る</a>
+      <a href="#" class="button is-outlined" data-aos="fade-up">メニューをもっと詳しく見る</a>
 
     </div>
   </section>

@@ -2,7 +2,7 @@
   <section id="mv" :class="{'is-mounted': isMounted}" class="hero is-medium" data-aos-easing="ease"
            data-aos-duration="400" data-aos-delay="40">
 
-    <carousel :per-page="1" :autoplay="false" :loop="true">
+    <carousel :per-page="1" :autoplay="true" :loop="true" :speed="1500" :autoplay-timeout="3000">
       <slide>
         <img src="~/assets/img/hero-1.jpg" class="mv-img" alt="">
       </slide>
@@ -57,7 +57,7 @@
   }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   @import "~assets/scss/_variables.scss";
 
   $t: 0s;
@@ -122,10 +122,6 @@
       z-index: 2;
       position: relative;
     }
-  }
-
-  section#mv + section {
-    margin-top: 85px;
   }
 
   #mv.hero {
@@ -195,22 +191,6 @@
           width: 100%;
         }
       }
-    }
-
-    .VueCarousel-pagination {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      text-align: right;
-    }
-
-    .VueCarousel-dot {
-      width: 12px;
-      height: 12px;
-      margin-bottom: 16px;
-      -webkit-border-radius: 0;
-      -moz-border-radius: 0;
-      border-radius: 0;
     }
 
   }

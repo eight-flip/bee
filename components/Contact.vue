@@ -2,13 +2,13 @@
   <div>
     <section class="section has-text-centered">
       <div class="container">
-        <h2 class="section-title is-3 is-spaced">お問い合わせ</h2>
-        <p class="section-subtitle is-4">CONTACT</p>
+        <h2 class="section-title is-3 is-spaced" data-aos="fade-up">お問い合わせ</h2>
+        <p class="section-subtitle is-4" data-aos="fade-up">CONTACT</p>
 
-        <p class="is-size-7 mb25">各種お問い合わせはこちらからどうぞ。お気軽にご相談ください！</p>
+        <p class="is-size-7 mb25" data-aos="fade-up">各種お問い合わせはこちらからどうぞ。お気軽にご相談ください！</p>
 
 
-        <div class="box contact-box">
+        <div class="box contact-box" data-aos="fade-up">
           <div class="box-header">
 
             <div class="columns steps is-mobile inbox-container">
@@ -38,7 +38,7 @@
           </div>
         </div>
 
-        <div class="box forms has-background-grey-light">
+        <div class="box forms has-background-grey-light" data-aos="fade-up">
           <img src="~/assets/img/bee-grey-in-form.png" class="bg-img" alt="background">
           <no-ssr>
             <form action="/?thanks" name="contact" method="POST" class="form inbox-container" ref="form" netlify>
@@ -248,18 +248,18 @@
     data() {
       return {
         confirmModal: false,
-        // sei: '',
-        // mei: '',
-        // email: '',
-        // tel: '',
-        // hopes: [],
-        // agreement: false,
-        sei: 'たなか',
-        mei: 'たろう',
-        email: 'tanaka_kudan@example.com',
-        tel: '09012341234',
-        hopes: ['体験レッスン'],
-        agreement: true,
+        sei: '',
+        mei: '',
+        email: '',
+        tel: '',
+        hopes: [],
+        agreement: false,
+        // sei: 'たなか',
+        // mei: 'たろう',
+        // email: 'tanaka_kudan@example.com',
+        // tel: '09012341234',
+        // hopes: ['体験レッスン'],
+        // agreement: true,
         thanksModal: 'thanks' in this.$route.query ? true : false,
       };
     },

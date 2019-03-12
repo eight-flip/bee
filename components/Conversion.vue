@@ -1,6 +1,6 @@
 <template>
-  <section class="section has-text-centered has-bg-img">
-    <div class="card">
+  <section id="conversion" class="section has-text-centered has-bg-img">
+    <div class="card" data-aos="fade-up">
       <div class="card-header">
         <p class="card-header-title">お得な体験レッスン<br class="is-hidden-tablet">受付中です！</p>
       </div>
@@ -14,7 +14,7 @@
 
         <div class="columns is-desktop mt15 mb0">
           <div class="column">
-            <a href="#" class="button is-blue is-fullwidth">
+            <a href="tel:0332629444" class="button is-blue is-fullwidth">
               <span class="icon is-medium">
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35.993" viewBox="0 0 36 35.993"><g transform="translate(-298.001 -2341.681)"><path d="M29.061,24.677a7.747,7.747,0,0,1-6.834,4.707c-.362,0-6.2.317-14.574-7.649C.909,15.353.094,8.474,0,7.161-.042,5.894.32,2.68,4.71.327,5.254.01,6.34-.126,6.611.146c.136.136,3.8,6.2,3.892,6.427a1.394,1.394,0,0,1,.136.588A1.648,1.648,0,0,1,10.051,8.2,9.868,9.868,0,0,1,8.784,9.333,15.76,15.76,0,0,0,7.517,10.42a1.611,1.611,0,0,0-.588.95c.045.634.543,2.987,4.617,6.518,4.028,3.53,5.974,4.571,6.155,4.617a.984.984,0,0,0,.453.091,1.4,1.4,0,0,0,.95-.588c.407-.407,1.675-2.173,2.127-2.58a1.648,1.648,0,0,1,1.041-.588,1.394,1.394,0,0,1,.588.136c.181.091,6.291,3.666,6.382,3.757.317.362.091,1.4-.181,1.946" transform="matrix(0.966, 0.259, -0.259, 0.966, 305.606, 2341.681)" fill="#fff"/></g></svg>
               </span>
@@ -22,7 +22,7 @@
             </a>
           </div>
           <div class="column">
-            <a href="#" class="button is-blue is-fullwidth">
+            <a href="#contact" class="button is-blue is-fullwidth">
               <span class="icon is-medium">
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="26" viewBox="0 0 36 26"><g transform="translate(-713.067 -2345.684)"><path d="M35.109,26H.891A.9.9,0,0,1,0,25.1V.9A.9.9,0,0,1,.891,0H35.109A.9.9,0,0,1,36,.9V25.1A.9.9,0,0,1,35.109,26Z" transform="translate(713.068 2345.684)" fill="#fff"/><path d="M4.5,5.5l12.659,8.359L29.607,5.5" transform="translate(713.905 2345.759)" fill="none" stroke="#487aac" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/></g></svg>
               </span>
