@@ -68,3 +68,10 @@
     }
   }
 }
+
+.button.is-white.is-outlined:hover, .button.is-white.is-outlined:focus {
+  background-color: inherit;
+  border-color: inherit;
+  color: inherit;
+  opacity: 1 !important;
+}
