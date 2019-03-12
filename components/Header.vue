@@ -19,6 +19,10 @@
         <a href="#price" class="navbar-item"><span>MENU&PRICE</span></a>
         <a href="#access" class="navbar-item"><span>ACCESS</span></a>
         <a href="#faq" class="navbar-item"><span>Q&A</span></a>
+
+        <a href="#" class="button is-outlined">体験申し込みはこちら</a>
+
+        <img src="~/assets/img/grey-logo-in-nav.png" class="grey-logo" alt="logo">
       </div>
     </div>
   </nav>
@@ -54,10 +58,12 @@
     position: relative;
     z-index: 1;
     height: 54px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
     @include tablet() {
       height: 62px;
+      padding-left: 50px;
+      padding-right: 50px;
     }
     logo-link {
       padding: 0.5rem 0.9rem;
@@ -98,6 +104,7 @@
     a.navbar-item {
       background-color: inherit;
       color: inherit;
+      font-size: 24px;
       &:hover {
         opacity: 0.9;
       }
@@ -120,11 +127,26 @@
     }
 
     .navbar-menu.is-active {
+      z-index: 2;
       height: 100vh;
-      width: 90%;
       position: absolute;
       right: 0;
-      width: 240px;
+      width: 280px;
+
+      .button {
+        margin-top: 30px;
+        margin-left: 20px;
+      }
+
+      .grey-logo {
+        position: absolute;
+        bottom: 70px;
+        left: 0;
+        right: 0;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
   }
 

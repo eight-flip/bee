@@ -62,6 +62,7 @@
 
   $t: 0s;
   .card {
+    z-index: 0;
     background-color: transparent;
     box-shadow: none;
     $t1: .4s;
