@@ -28,14 +28,15 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    { src: '~assets/scss/main.scss', lang: 'scss' }
+    { src: '~assets/scss/app.scss', lang: 'scss' }
   ],
 
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    {src: 'plugins/carousel.js', ssr: false} // Only works on client side
+    {src: 'plugins/carousel.js', ssr: false},
+    {src: 'plugins/aos.js', ssr: false},
   ],
 
   /*
