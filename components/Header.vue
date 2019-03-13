@@ -20,9 +20,9 @@
         <a href="#access" class="navbar-item"><span>ACCESS</span></a>
         <a href="#faq" class="navbar-item"><span>Q&A</span></a>
 
-        <a href="#" class="button is-outlined">体験申し込みはこちら</a>
+        <a href="#" class="button is-outlined is-hidden-desktop">体験申し込みはこちら</a>
 
-        <img src="~/assets/img/grey-logo-in-nav.png" class="grey-logo" alt="logo">
+        <img src="~/assets/img/grey-logo-in-nav.png" class="grey-logo is-hidden-desktop" alt="logo">
       </div>
     </div>
   </nav>
