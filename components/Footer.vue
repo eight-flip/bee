@@ -4,16 +4,34 @@
       <div class="columns">
         <div class="column">
           <ul class="links">
-            <li><a href="#about">ABOUTー <span class="is-size-7">Beeとは？</span></a></li>
-            <li><a href="#studio">STUDIOー <span class="is-size-7">施設紹介</span></a></li>
-            <li><a href="#price">MENU&PRICEー <span class="is-size-7">メニュー・料金</span></a></li>
+            <li>
+              <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#about'">ABOUTー <span class="is-size-7">Beeとは？</span></a>
+              <a v-else href="/#about">ABOUTー <span class="is-size-7">Beeとは？</span></a>
+            </li>
+            <li>
+              <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#studio'">STUDIOー <span class="is-size-7">施設紹介</span></a>
+              <a v-else href="/#studio">STUDIOー <span class="is-size-7">施設紹介</span></a>
+            </li>
+            <li>
+              <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#price'">MENU&PRICEー <span class="is-size-7">メニュー・料金</span></a>
+              <a v-else href="/#price">MENU&PRICEー <span class="is-size-7">メニュー・料金</span></a>
+            </li>
           </ul>
         </div>
         <div class="column">
           <ul class="links">
-            <li><a href="#access">ACCESSー <span class="is-size-7">アクセス</span></a></li>
-            <li><a href="#contact">CONTACTー <span class="is-size-7">お問い合わせ</span></a></li>
-            <li><a href="#faq">Q&Aー <span class="is-size-7">よくあるご質問</span></a></li>
+            <li>
+              <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#access'">ACCESSー <span class="is-size-7">アクセス</span></a>
+              <a v-else href="/#access">ACCESSー <span class="is-size-7">アクセス</span></a>
+            </li>
+            <li>
+              <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#contact'">CONTACTー <span class="is-size-7">お問い合わせ</span></a>
+              <a v-else href="/#contact">CONTACTー <span class="is-size-7">お問い合わせ</span></a>
+            </li>
+            <li>
+              <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#faq'">Q&Aー <span class="is-size-7">よくあるご質問</span></a>
+              <a v-else href="/#faq">Q&Aー <span class="is-size-7">よくあるご質問</span></a>
+            </li>
           </ul>
         </div>
         <div class="column has-text-left is-flex-end">
