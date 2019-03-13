@@ -20,13 +20,13 @@
       <div class="card-content">
         <span class="clip">
           <p class="title clip-inside">
-                  お客様ひとりひとり特別なメニューで、知識豊富なトレーナーがエクササイズをご提案します。
-                </p>
+            お客様ひとりひとり特別なメニューで、知識豊富なトレーナーがエクササイズをご提案します。
+          </p>
         </span>
         <span class="clip">
           <div class="subtitle clip-inside">
-                  <a href="#contact" class="button is-outlined is-white has-right-border">体験申し込みはこちら</a>
-                </div>
+            <a href="#" v-scroll-to="'#contact'"  class="button is-outlined is-white has-right-border">体験申し込みはこちら</a>
+          </div>
         </span>
         <span class="clip">
           <img src="~/assets/img/bee-grey.png" alt="bee" class="bee-grey clip-inside">
@@ -89,6 +89,7 @@
     }
 
     $t: $t + $t1 + .1s;
+
     .clip {
       width: 100%;
       height: 100%;
@@ -99,8 +100,8 @@
       clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
 
       .clip-inside {
-        transition: transform 1s cubic-bezier(.34,.07,.095,.995) $t;
-        transform: translate3d(0,3vw ,0) skewY(5deg);
+        transition: transform 1s cubic-bezier(.34, .07, .095, .995) $t;
+        transform: translate3d(0, 3vw, 0) skewY(5deg);
         transform-origin: left;
       }
     }
