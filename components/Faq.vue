@@ -1,5 +1,5 @@
 <template>
-  <section class="section has-text-centered">
+  <section id="faq" class="section has-text-centered">
     <div class="container">
       <h2 class="section-title is-3 is-spaced" data-aos="fade-up">よくある質問</h2>
       <p class="section-subtitle is-4" data-aos="fade-up">Q&A</p>

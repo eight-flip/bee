@@ -1,5 +1,5 @@
 <template>
-  <section class="section has-text-centered">
+  <section id="access" class="section has-text-centered">
     <div class="container">
       <h2 class="section-title is-3 is-spaced" data-aos="fade-up">アクセス</h2>
       <p class="section-subtitle is-4" data-aos="fade-up">ACCESS</p>

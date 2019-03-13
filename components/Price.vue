@@ -1,5 +1,5 @@
 <template>
-  <section class="section has-text-centered has-background-grey-light">
+  <section id="price" class="section has-text-centered has-background-grey-light">
     <div class="container">
       <h2 class="section-title is-3 is-spaced" data-aos="fade-up">メニュー&料金</h2>
       <p class="section-subtitle is-4" data-aos="fade-up">MENU&PRICE</p>
