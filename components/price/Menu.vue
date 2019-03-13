@@ -65,19 +65,9 @@
             </thead>
             <tbody>
             <tr>
-              <th><span class="membership">DAY会員</span><br class="is-hidden-tablet"><span class="note">（平日昼<br>12〜17時限定）</span></th>
-              <td class="price">¥25,000</td>
-              <td class="price">¥37,500</td>
-            </tr>
-            <tr>
-              <th><span class="membership">NIGHT会員</span><br class="is-hidden-tablet"><span class="note">（平日夜<br>17〜21時限定）</span></th>
-              <td class="price">¥28,000</td>
-              <td class="price">¥42,000</td>
-            </tr>
-            <tr>
               <th><span class="membership">FREE30会員</span><br class="is-hidden-tablet"><span class="note">（終日利用可能）</span></th>
-              <td class="price">¥30,000</td>
               <td class="price">¥45,000</td>
+              <td class="price">¥65,000</td>
             </tr>
             </tbody>
           </table>
@@ -93,35 +83,40 @@
           <h3>30分加圧1回⋯7,000P</h3>
         </div>
         <div class="box box-body">
-          <table class="table is-bordered is-fullwidth">
+          <table class="table is-bordered is-fullwidth pre-paid">
             <thead>
             <tr>
-              <th class="none">
-                <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10">
-                  <line fill="none" stroke="#e3e3e3" stroke-width="0.1" stroke-miterlimit="10" x1="0" y1="10" x2="10"
-                        y2="0"/>
-                </svg>
-              </th>
-              <th class="times"><span class="num">4</span>回/月</th>
-              <th class="times"><span class="num">6</span>回/月</th>
+              <th class="times">価格</th>
+              <th class="times">ポイント</th>
+              <th class="times">ポイント<br class="is-hidden-tablet">会員期限</th>
             </tr>
             </thead>
             <tbody>
-            <tr>
-              <th><span class="membership">DAY会員</span><br class="is-hidden-tablet"><span class="note">（平日昼<br>12〜17時限定）</span></th>
-              <td class="price">¥25,000</td>
-              <td class="price">¥37,500</td>
-            </tr>
-            <tr>
-              <th><span class="membership">NIGHT会員</span><br class="is-hidden-tablet"><span class="note">（平日夜<br>17〜21時限定）</span></th>
-              <td class="price">¥28,000</td>
-              <td class="price">¥42,000</td>
-            </tr>
-            <tr>
-              <th><span class="membership">FREE30会員</span><br class="is-hidden-tablet"><span class="note">（終日利用可能）</span></th>
-              <td class="price">¥30,000</td>
-              <td class="price">¥45,000</td>
-            </tr>
+              <tr>
+                <td class="price">¥10,000</td>
+                <td class="price">10,000P</td>
+                <td class="price">3ヶ月</td>
+              </tr>
+              <tr>
+                <td class="price">¥30,000</td>
+                <td class="price">32,000P</td>
+                <td class="price">3ヶ月</td>
+              </tr>
+              <tr>
+                <td class="price">¥50,000</td>
+                <td class="price">55,000P</td>
+                <td class="price">6ヶ月</td>
+              </tr>
+              <tr>
+                <td class="price">¥100,000</td>
+                <td class="price">110,000P</td>
+                <td class="price">12ヶ月</td>
+              </tr>
+              <tr>
+                <td class="price">¥200,000</td>
+                <td class="price">220,000P</td>
+                <td class="price">24ヶ月</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -264,6 +259,10 @@
       }
     }
     tbody th {
+      @include mobile() {
+        padding-right: 6px;
+        padding-left: 6px;
+      }
       @include tablet() {
         padding-left: 30px;
         padding-right: 30px;
@@ -319,6 +318,13 @@
       h3 {
         font-size: 20px;
         font-weight: bold;
+      }
+    }
+    .pre-paid {
+      .price {
+        @include mobile() {
+          font-size: 18px;
+        }
       }
     }
   }
