@@ -96,34 +96,36 @@
         top: calc(50% + 6px);
       }
     }
-    .navbar-item {
-      padding-left: 22px;
-      padding-right: 22px;
-    }
-
-    a.navbar-item {
-      background-color: inherit;
-      color: inherit;
-      font-size: 24px;
-      &:hover {
-        opacity: 0.9;
+    .navbar-end {
+      .navbar-item {
+        padding-left: 22px;
+        padding-right: 22px;
       }
-    }
-    a.navbar-item:after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 3px;
-      background: #D81906;
-      transform-origin: right top;
-      transform: scaleX(0);
-      transition: transform .3s cubic-bezier(.25,.46,.45,.94) 0ms, opacity .3s cubic-bezier(.25,.46,.45,.94) 0ms;
-    }
-    a.navbar-item:hover:after {
-      transform-origin: left top;
-      transform: scale(1);
+
+      a.navbar-item {
+        background-color: inherit;
+        color: inherit;
+        font-size: 24px;
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+      a.navbar-item:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: #D81906;
+        transform-origin: right top;
+        transform: scaleX(0);
+        transition: transform .3s cubic-bezier(.25,.46,.45,.94) 0ms, opacity .3s cubic-bezier(.25,.46,.45,.94) 0ms;
+      }
+      a.navbar-item:hover:after {
+        transform-origin: left top;
+        transform: scale(1);
+      }
     }
 
     .navbar-menu.is-active {
