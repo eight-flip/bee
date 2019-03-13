@@ -50,6 +50,7 @@
 
     .container {
       position: relative;
+      overflow: hidden;
     }
   }
 
