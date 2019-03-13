@@ -12,17 +12,17 @@
 
       <div class="triangle" data-aos="fade-up">
         <img src="~/assets/img/triangle.png" class="bg" alt="menu">
-        <a href="#1" class="link-top">
+        <a href="#" v-scroll-to="'#price'" class="link-top">
           <img src="~/assets/img/triangle-top.png" class="triangle-img" alt="menu">
           <span>メニューはこちら</span>
         </a>
-        <a href="#1" class="link-left">
+        <a href="#" v-scroll-to="'#studio'" class="link-left">
           <img src="~/assets/img/triangle-left.png" class="triangle-img" alt="menu">
           <span>施設紹介はこちら</span>
         </a>
-        <a href="#1" class="link-right">
+        <a href="#" v-scroll-to="'#mv'" class="link-right">
           <img src="~/assets/img/triangle-right.png" class="triangle-img" alt="menu">
-          <span>エステメニューはこちら</span>
+          <span>comming soon</span>
         </a>
       </div>
 
