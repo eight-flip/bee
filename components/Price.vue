@@ -64,7 +64,7 @@
         </div>
       </div>
 
-      <a href="#" class="button is-outlined" data-aos="fade-up">メニューをもっと詳しく見る</a>
+      <nuxt-link to="price" class="button is-outlined" data-aos="fade-up">メニューをもっと詳しく見る</nuxt-link>
 
     </div>
   </section>
@@ -72,7 +72,6 @@
 
 <style lang="scss" scoped>
   @import "~assets/scss/_variables.scss";
-
   .section {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -173,7 +172,7 @@
     .price {
       font-size: 23px;
       font-weight: bold;
-      font-family: 'DIN-Bold';
+      /*font-family: 'DIN-Bold';*/
       line-height: 1;
       margin-top: 24px;
       margin-bottom: 10px;

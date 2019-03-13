@@ -1,11 +1,11 @@
 <template>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <div :class="{'filter': nav}"></div>
     <div class="navbar-brand">
       <a class="navbar-item logo-link" href="/">
         <img src="~/assets/img/header-logo.png" class="logo" alt="Bee logo">
       </a>
-      <a role="button" :class="{'is-active': nav}" class="navbar-burger" aria-label="menu" aria-expanded="false" @click="nav = nav ? false : true">
+      <a role="button" :class="{'is-active': nav}" class="navbar-burger" aria-label="menu" aria-expanded="false" @click="toggleNav()">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -13,14 +13,26 @@
     </div>
     <div :class="{'is-active': nav}" class="navbar-menu">
       <div class="navbar-end">
-        <a href="#top" class="navbar-item"><span>TOP</span></a>
-        <a href="#about" class="navbar-item"><span>ABOUT</span></a>
-        <a href="#studio" class="navbar-item"><span>STUDIO</span></a>
-        <a href="#price" class="navbar-item"><span>MENU&PRICE</span></a>
-        <a href="#access" class="navbar-item"><span>ACCESS</span></a>
-        <a href="#faq" class="navbar-item"><span>Q&A</span></a>
+        <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#mv'" class="navbar-item" @click="toggleNav()"><span>TOP</span></a>
+        <a v-else href="/#mv" class="navbar-item" @click="toggleNav()"><span>TOP</span></a>
 
-        <a href="#" class="button is-outlined is-hidden-desktop">体験申し込みはこちら</a>
+        <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#about'" class="navbar-item" @click="toggleNav()"><span>ABOUT</span></a>
+        <a v-else href="/#about" class="navbar-item" @click="toggleNav()"><span>ABOUT</span></a>
+
+        <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#studio'" class="navbar-item" @click="toggleNav()"><span>STUDIO</span></a>
+        <a v-else href="/#studio" class="navbar-item" @click="toggleNav()"><span>STUDIO</span></a>
+
+        <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#price'" class="navbar-item" @click="toggleNav()"><span>MENU&PRICE</span></a>
+        <a v-else href="/#price" class="navbar-item" @click="toggleNav()"><span>MENU&PRICE</span></a>
+
+        <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#access'" class="navbar-item" @click="toggleNav()"><span>ACCESS</span></a>
+        <a v-else href="/#access" class="navbar-item" @click="toggleNav()"><span>ACCESS</span></a>
+
+        <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#faq'" class="navbar-item" @click="toggleNav()"><span>Q&A</span></a>
+        <a v-else href="/#faq" class="navbar-item" @click="toggleNav()"><span>Q&A</span></a>
+
+        <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#contact'" class="button is-outlined is-hidden-desktop" @click="toggleNav()">体験申し込みはこちら</a>
+        <a v-else href="/#contact" class="button is-outlined is-hidden-desktop" @click="toggleNav()">体験申し込みはこちら</a>
 
         <img src="~/assets/img/grey-logo-in-nav.png" class="grey-logo is-hidden-desktop" alt="logo">
       </div>
@@ -35,6 +47,12 @@
         nav: false,
       };
     },
+    methods: {
+      toggleNav: function() {
+        if (window.innerWidth > 1087) return;
+        this.nav = this.nav ? false : true;
+      }
+    }
   }
 </script>
 
@@ -55,7 +73,6 @@
     background-color: rgba(0, 0, 0, 0.5);
   }
   .navbar {
-    position: relative;
     z-index: 1;
     height: 54px;
     padding-left: 5px;
@@ -106,6 +123,7 @@
         background-color: inherit;
         color: inherit;
         font-size: 24px;
+        font-weight: normal;
         &:hover {
           opacity: 0.9;
         }

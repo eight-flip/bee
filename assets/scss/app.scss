@@ -1,6 +1,7 @@
 @import "~aos/dist/aos";
 @import "~bulma/sass/utilities/initial-variables";
 @import "~bulma/sass/utilities/functions";
+
 $fullhd-enabled: false;
 // Set your own variables
 //$size-1: 3rem !default
@@ -17,6 +18,12 @@ $size-7: 14px;
 @import "_buttons";
 @import "_fonts";
 @import "_util";
+
+html, body, button, input, select, textarea {
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "游ゴシック体", YuGothic,
+  "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+  font-weight: 500;
+}
 
 .navbar-item img {
   max-height: none;

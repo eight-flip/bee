@@ -15,7 +15,8 @@
     "bulma": "0.7.4",
     "cross-env": "^5.2.0",
     "nuxt": "^2.4.0",
-    "vue-carousel": "0.18.0-alpha"
+    "vue-carousel": "0.18.0-alpha",
+    "vue-scrollto": "2.14.0"
   },
   "devDependencies": {
     "node-sass": "4.11.0",

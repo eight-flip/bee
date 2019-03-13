@@ -4,16 +4,16 @@
       <div class="columns">
         <div class="column">
           <ul class="links">
-            <li><a href="#">ABOUTー <span class="is-size-7">Beeとは？</span></a></li>
-            <li><a href="#">STDIOー <span class="is-size-7">施設紹介</span></a></li>
-            <li><a href="#">MENU&PRICEー <span class="is-size-7">メニュー・料金</span></a></li>
+            <li><a href="#about">ABOUTー <span class="is-size-7">Beeとは？</span></a></li>
+            <li><a href="#studio">STUDIOー <span class="is-size-7">施設紹介</span></a></li>
+            <li><a href="#price">MENU&PRICEー <span class="is-size-7">メニュー・料金</span></a></li>
           </ul>
         </div>
         <div class="column">
           <ul class="links">
-            <li><a href="#">ACCESSー <span class="is-size-7">アクセス</span></a></li>
-            <li><a href="#">CONTACTー <span class="is-size-7">お問い合わせ</span></a></li>
-            <li><a href="#">Q&Aー <span class="is-size-7">よくあるご質問</span></a></li>
+            <li><a href="#access">ACCESSー <span class="is-size-7">アクセス</span></a></li>
+            <li><a href="#contact">CONTACTー <span class="is-size-7">お問い合わせ</span></a></li>
+            <li><a href="#faq">Q&Aー <span class="is-size-7">よくあるご質問</span></a></li>
           </ul>
         </div>
         <div class="column has-text-left is-flex-end">

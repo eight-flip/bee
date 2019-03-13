@@ -8,6 +8,11 @@
   import Header from '~/components/Header.vue'
 
   export default {
+    head: {
+      htmlAttrs: {
+        class: 'has-navbar-fixed-top'
+      }
+    },
     components: {
       Header
     }

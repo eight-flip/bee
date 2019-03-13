@@ -38,7 +38,12 @@ export default {
     Faq,
     Footer,
     Copyright,
-  }
+  },
+  mounted() {
+    if ($nuxt.$route.hash) {
+      this.$scrollTo($nuxt.$route.hash);
+    }
+  },
 }
 </script>
 
