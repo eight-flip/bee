@@ -2,15 +2,16 @@
   <section id="mv" :class="{'is-mounted': isMounted}" class="hero is-medium" data-aos-easing="ease"
            data-aos-duration="400" data-aos-delay="40">
 
-    <carousel :per-page="1" :autoplay="true" :loop="true" :speed="1500" :autoplay-timeout="3000">
+    <carousel :per-page="1" :autoplay="true" :loop="true" :speed="1500" :autoplay-timeout="3000" :paginationPadding="6"
+              :paginationSize="12">
       <slide>
-        <img src="~/assets/img/hero-1.jpg" class="mv-img" alt="">
+        <img src="~/assets/img/hero-1.jpg" class="mv-img img-1" alt="top image1">
       </slide>
       <slide>
-        <img src="~/assets/img/hero-1.jpg" class="mv-img" alt="">
+        <img src="~/assets/img/hero-2.jpg" class="mv-img img-2" alt="top image2">
       </slide>
       <slide>
-        <img src="~/assets/img/hero-1.jpg" class="mv-img" alt="">
+        <img src="~/assets/img/hero-3.jpg" class="mv-img img-3" alt="top image3">
       </slide>
     </carousel>
 
@@ -134,8 +135,18 @@
       max-width: 100%;
       height: calc(100vh - #{$navbar-height});
       object-fit: cover;
-      object-position: 60% 0%;
       width: 100%;
+      @include mobile() {
+        &.img-1 {
+          object-position: 59%;
+        }
+        &.img-2 {
+          object-position: 52%;
+        }
+        &.img-3 {
+          object-position: 2%;
+        }
+      }
       @include tablet() {
         max-height: 700px;
       }

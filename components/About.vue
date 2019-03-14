@@ -20,9 +20,10 @@
           <img src="~/assets/img/triangle-left.png" class="triangle-img" alt="menu">
           <span>施設紹介はこちら</span>
         </a>
-        <a href="#" v-scroll-to="'#mv'" class="link-right">
+        <a href="#" class="link-right" @click="$event.preventDefault()">
           <img src="~/assets/img/triangle-right.png" class="triangle-img" alt="menu">
-          <span>comming soon</span>
+          <span class="disabled">エステメニュー<br>はこちら</span>
+          <span>Comming soon!</span>
         </a>
       </div>
 
@@ -112,14 +113,27 @@
     }
 
     .link-right {
+      cursor: initial;
       right: -15px;
       @include tablet() {
         right: -45px;
       }
-
       span {
+        top: 55%;
+        width: 80%;
         @include tablet() {
-          top: 38%;
+          font-size: 24px;
+          top: 53%;
+          width: 65%;
+        }
+        &.disabled {
+          line-height: 1.2;
+          opacity: .6;
+          top: 25%;
+          @include tablet() {
+            font-size: 22px;
+            top: 30%;
+          }
         }
       }
     }

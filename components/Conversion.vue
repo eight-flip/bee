@@ -22,20 +22,22 @@
             </a>
           </div>
           <div class="column">
-            <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#contact'" class="button is-blue is-fullwidth">
+            <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#contact'" class="button is-blue is-fullwidth counseling">
               <span class="icon is-medium">
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="26" viewBox="0 0 36 26"><g transform="translate(-713.067 -2345.684)"><path d="M35.109,26H.891A.9.9,0,0,1,0,25.1V.9A.9.9,0,0,1,.891,0H35.109A.9.9,0,0,1,36,.9V25.1A.9.9,0,0,1,35.109,26Z" transform="translate(713.068 2345.684)" fill="#fff"/><path d="M4.5,5.5l12.659,8.359L29.607,5.5" transform="translate(713.905 2345.759)" fill="none" stroke="#487aac" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/></g></svg>
               </span>
-              <span class="ml5">WEBフォームはこちら</span>
+              <span class="ml5">無料カウンセリングはこちら</span>
             </a>
-            <a v-else href="/#contact" class="button is-blue is-fullwidth">
+            <a v-else href="/#contact" class="button is-blue is-fullwidth counseling">
               <span class="icon is-medium">
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="26" viewBox="0 0 36 26"><g transform="translate(-713.067 -2345.684)"><path d="M35.109,26H.891A.9.9,0,0,1,0,25.1V.9A.9.9,0,0,1,.891,0H35.109A.9.9,0,0,1,36,.9V25.1A.9.9,0,0,1,35.109,26Z" transform="translate(713.068 2345.684)" fill="#fff"/><path d="M4.5,5.5l12.659,8.359L29.607,5.5" transform="translate(713.905 2345.759)" fill="none" stroke="#487aac" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/></g></svg>
               </span>
-              <span class="ml5">WEBフォームはこちら</span>
+              <span class="ml5">無料カウンセリングはこちら</span>
             </a>
           </div>
         </div>
+
+        <p class="attention">※カウンセリング時間は1時間です。お客様に合わせたプランをご提案します。</p>
 
       </div>
     </div>
@@ -104,6 +106,10 @@
 
   .card-content {
     position: relative;
+    @include until($for-iPhone5) {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
     .ballon-normal-price {
       margin: -45px auto 0;
       @include mobile() {
@@ -131,12 +137,27 @@
         margin-bottom: 5px;
       }
     }
+    .attention {
+      margin-top: 16px;
+      margin-bottom: 10px;
+    }
+
+    .counseling {
+      font-size: 16px;
+      letter-spacing: -1.2px;
+      @include tablet() {
+        font-size: 24px;
+      }
+    }
   }
 
   .em {
     font-size: 28px;
     line-height: 0.8;
     margin-top: -8px;
+    @include until($for-iPhone5) {
+      font-size: 26px;
+    }
   }
 
   .em2 {

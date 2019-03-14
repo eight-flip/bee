@@ -81,7 +81,7 @@
       position: relative;
       display: block;
       width: 100%;
-      transition: all 0.2s ease-in;
+      transition: all .45s ease-in;
       color: #000;
       display: block;
       font-size: 20px;
@@ -105,7 +105,7 @@
           right: 1.5em;
         }
         margin-top: -5px;
-        transition: all .8s ease-in;
+        transition: all .45s ease-in;
 
         border-bottom: solid 2px #697b91;
         border-right: solid 2px #697b91;
@@ -129,7 +129,7 @@
 
     &--target {
       overflow: hidden;
-      transition: height 1s ease-in-out;
+      transition: height .45s ease-in-out;
     }
 
     &--body {
