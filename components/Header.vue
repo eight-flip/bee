@@ -13,7 +13,7 @@
     </div>
     <div :class="{'is-active': nav}" class="navbar-menu">
       <div class="navbar-start">
-        <p class="is-hidden-mobile">パーソナルトレーニング<br>スタジオ Bee</p>
+        <h1 class="site-name is-hidden-mobile">パーソナルトレーニング<br>スタジオ Bee</h1>
       </div>
       <div class="navbar-end">
         <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#mv'" class="navbar-item" @click="toggleNav()"><span>TOP</span></a>
@@ -117,7 +117,7 @@
       }
     }
     .navbar-start {
-      p {
+      .site-name {
         font-size: 12px;
         line-height: 1.25;
         color: #333;
