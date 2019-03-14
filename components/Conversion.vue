@@ -140,6 +140,9 @@
     .attention {
       margin-top: 16px;
       margin-bottom: 10px;
+      @include mobile() {
+        font-size: 14px;
+      }
     }
 
     .counseling {

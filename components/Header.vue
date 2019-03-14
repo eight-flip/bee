@@ -123,6 +123,9 @@
         background-color: inherit;
         color: inherit;
         font-size: 24px;
+        @include tablet() {
+          font-size: 18px;
+        }
         font-weight: normal;
         &:hover {
           opacity: 0.9;
