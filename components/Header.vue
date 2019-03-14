@@ -12,6 +12,9 @@
       </a>
     </div>
     <div :class="{'is-active': nav}" class="navbar-menu">
+      <div class="navbar-start">
+        <p class="is-hidden-mobile">パーソナルトレーニング<br>スタジオ Bee</p>
+      </div>
       <div class="navbar-end">
         <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#mv'" class="navbar-item" @click="toggleNav()"><span>TOP</span></a>
         <a v-else href="/#mv" class="navbar-item" @click="toggleNav()"><span>TOP</span></a>
@@ -111,6 +114,15 @@
 
       &:nth-child(3) {
         top: calc(50% + 6px);
+      }
+    }
+    .navbar-start {
+      p {
+        font-size: 12px;
+        line-height: 1.25;
+        color: #333;
+        margin-top: 18px;
+        margin-left: 3px;
       }
     }
     .navbar-end {
