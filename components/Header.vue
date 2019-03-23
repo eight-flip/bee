@@ -13,7 +13,7 @@
     </div>
     <div :class="{'is-active': nav}" class="navbar-menu">
       <div class="navbar-start">
-        <h1 class="site-name is-hidden-mobile">パーソナルトレーニング<br>スタジオ Bee</h1>
+        <h1 class="site-name is-hidden-touch">パーソナルトレーニング<br>スタジオ Bee</h1>
       </div>
       <div class="navbar-end">
         <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#mv'" class="navbar-item" @click="toggleNav()"><span>TOP</span></a>

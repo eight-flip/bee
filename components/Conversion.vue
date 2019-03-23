@@ -117,6 +117,7 @@
       }
       @include tablet() {
         margin-top: -35px;
+        width: 200px;
       }
       @include desktop() {
         position: absolute;

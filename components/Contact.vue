@@ -2,10 +2,10 @@
   <div>
     <section id="contact" class="section has-text-centered">
       <div class="container">
-        <h2 class="section-title is-3 is-spaced" data-aos="fade-up">お問い合わせ</h2>
+        <h2 class="section-title is-3 is-spaced" data-aos="fade-up">無料カウンセリングのお申し込み</h2>
         <p class="section-subtitle is-4" data-aos="fade-up">CONTACT</p>
 
-        <p class="is-size-7 mb25" data-aos="fade-up">各種お問い合わせはこちらからどうぞ。お気軽にご相談ください！</p>
+        <p class="is-size-7 mb25" data-aos="fade-up">無料カウンセリングのお申込みはこちらからどうぞ。お気軽にご相談ください！</p>
 
 
         <div class="box contact-box" data-aos="fade-up">
@@ -15,7 +15,7 @@
               <div class="column">
                 <div class="box step-1 active">
                   <span class="step-title">STEP1</span><br>
-                  <span class="step">お問い合わせ内容の入力</span>
+                  <span class="step">お申込み情報の入力</span>
                 </div>
               </div>
 
@@ -67,37 +67,20 @@
                   <input class="input" name="電話番号" type="tel" placeholder="08012345678" v-model="tel">
                 </div>
               </div>
+              <hr>
 
-              <label class="label">希望サービス <span class="required">必須</span></label>
               <div class="field">
-                <div class="control is-normal">
+                <div class="control">
                   <label class="checkbox">
-                    <input name="希望サービス[]" type="checkbox" value="体験レッスン" v-model="hopes">
-                    体験レッスン
+                    <input type="checkbox" v-model="agreement">
+                    個人情報の取扱に同意する <span class="required">必須</span>
                   </label>
+                  <textarea class="privacy-policy" readonly>{{ privacyPolicy }}</textarea>
                 </div>
-                <div class="control is-normal">
-                  <label class="checkbox">
-                    <input name="希望サービス[]" type="checkbox" value="今すぐ入会したい" v-model="hopes">
-                    今すぐ入会したい
-                  </label>
-                </div>
+              </div>
 
-                <hr>
-
-                <div class="field">
-                  <div class="control">
-                    <label class="checkbox">
-                      <input type="checkbox" v-model="agreement">
-                      <a href="#">利用規約</a>、及び<a href="#">個人情報の取扱</a>に同意する <span class="required">必須</span>
-                    </label>
-                  </div>
-                </div>
-
-                <div class="field has-text-centered">
-                  <button type="button" class="button is-blue confirm" @click="openConfirmModal();">入力内容を確認する</button>
-                </div>
-
+              <div class="field has-text-centered">
+                <button type="button" class="button is-blue confirm" @click="openConfirmModal();">入力内容を確認する</button>
               </div>
 
             </form>
@@ -153,22 +136,6 @@
 
             <label class="label">電話番号 <span class="is-size-7">※ハイフンの入力は不要です。</span></label>
             <p class="form-value">{{ tel }}</p>
-
-            <label class="label">希望サービス <span class="required">必須</span></label>
-            <div class="field">
-              <div class="control is-normal">
-                <label class="checkbox">
-                  <input type="checkbox" :checked="hopes[0]" disabled>
-                  体験レッスン
-                </label>
-              </div>
-              <div class="control is-normal">
-                <label class="checkbox">
-                  <input type="checkbox" :checked="hopes[1]" disabled>
-                  今すぐ入会したい
-                </label>
-              </div>
-            </div>
 
             <hr>
 
@@ -244,6 +211,7 @@
 </template>
 
 <script>
+  import privacyPolicy from '~/assets/data/privacy-policy.json';
   export default {
     data() {
       return {
@@ -254,6 +222,7 @@
         tel: '',
         hopes: [],
         agreement: false,
+        privacyPolicy: privacyPolicy.text,
         // sei: 'たなか',
         // mei: 'たろう',
         // email: 'tanaka_kudan@example.com',
@@ -517,6 +486,7 @@
     position: relative;
     width: 22px;
     height: 22px;
+    margin-top: -3px;
     vertical-align: middle;
     background: url('~assets/img/checkbox.png') left top;
     margin-right: 10px;
@@ -572,5 +542,17 @@
       margin-top: 30px;
       margin-bottom: 20px;
     }
+  }
+
+  .privacy-policy {
+    overflow: scroll;
+    display: block;
+    margin-top: 3px;
+    font-size: 12px;
+    line-height: 1.2;
+    height: 5em;
+    box-shadow: none;
+    width: 280px;
+    min-width: initial;
   }
 </style>
