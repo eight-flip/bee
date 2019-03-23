@@ -103,7 +103,7 @@
               <div class="column">
                 <div class="box step-1">
                   <span class="step-title">STEP1</span><br>
-                  <span class="step">お問い合わせ内容の入力</span>
+                  <span class="step">お申込み情報の入力</span>
                 </div>
               </div>
 
@@ -170,7 +170,7 @@
               <div class="column">
                 <div class="box step-1">
                   <span class="step-title">STEP1</span><br>
-                  <span class="step">お問い合わせ内容の入力</span>
+                  <span class="step">お申込み情報の入力</span>
                 </div>
               </div>
 
@@ -196,7 +196,7 @@
           <div class="form inbox-container">
             <img src="~/assets/img/bee-grey-in-form.png" class="bg-img" alt="background">
 
-            <p class="thanks-msg">お問い合わせ内容を送信完了しました！<br>担当者からのご連絡をお待ちください。</p>
+            <p class="thanks-msg">お申込み情報を送信完了しました！<br>担当者からのご連絡をお待ちください。</p>
             <img src="~/assets/img/complete-check.png" class="complete-check" alt="完了">
 
             <div class="field is-grouped is-grouped-centered is-grouped-multiline submit-area">
@@ -242,7 +242,6 @@
         if (this.sei === ''
           || this.mei === ''
           || this.email === ''
-          || this.hopes.length === 0
           || this.agreement === false) {
           alert('入力されていない項目があります。');
           return false;
