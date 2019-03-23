@@ -26,7 +26,7 @@
             </li>
             <li>
               <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#contact'">CONTACTー <span class="is-size-7">お問い合わせ</span></a>
-              <a v-else href="/#contact">CONTACTー <span class="is-size-7">お問い合わせ</span></a>
+              <a v-else href="/#contact">CONTACTー <span class="is-size-7">無料カウンセリング</span></a>
             </li>
             <li>
               <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#faq'">Q&Aー <span class="is-size-7">よくあるご質問</span></a>

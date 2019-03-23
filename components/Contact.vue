@@ -193,7 +193,7 @@
           </div>
         </div>
         <div class="box forms has-background-grey-light">
-          <div class="form inbox-container">
+          <div class="form inbox-consltainer">
             <img src="~/assets/img/bee-grey-in-form.png" class="bg-img" alt="background">
 
             <p class="thanks-msg">お申込み情報を送信完了しました！<br>担当者からのご連絡をお待ちください。</p>
