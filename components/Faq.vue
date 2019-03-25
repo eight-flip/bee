@@ -10,7 +10,7 @@
         <js-accordion>
           <div class="header" slot="title"><span class="q-count">Q1</span><span class="q">どのくらい続けると効果がでますか？</span></div>
           <div class="js-accordion--body" slot="body">
-            <p class="a is-size-7">食事を減らすという食事制限ではなく、専門知識を持ったトレーナーが食事のバランスをアドバイスし、食生活を見直しながらコントロールしていきます。</p>
+            <p class="a is-size-7"></p>
           </div>
         </js-accordion>
 
@@ -22,9 +22,7 @@
         </js-accordion>
 
         <js-accordion>
-          <div class="header" slot="title"><span class="q-count">Q3</span><span class="q">ウェアなどレンタルできますか？質問が2行以上の場合です。ウェアなどレンタルできます
-か？質問が2行以上の場合です。ウェアなどレンタルできますか？質問が2行以上の場合で
-す。ウェアなどレンタルできますか？？</span></div>
+          <div class="header" slot="title"><span class="q-count">Q3</span><span class="q">ウェアなどレンタルできますか？</span></div>
           <div class="js-accordion--body" slot="body">
             <p class="a is-size-7">食事を減らすという食事制限ではなく、専門知識を持ったトレーナーが食事のバランスをアドバイスし、食生活を見直しながらコントロールしていきます。</p>
           </div>
@@ -33,21 +31,21 @@
         <js-accordion>
           <div class="header" slot="title"><span class="q-count">Q4</span><span class="q">入会までの流れを教えてください。</span></div>
           <div class="js-accordion--body" slot="body">
-            <p class="a is-size-7">食事を減らすという食事制限ではなく、専門知識を持ったトレーナーが食事のバランスをアドバイスし、食生活を見直しながらコントロールしていきます。</p>
+            <p class="a is-size-7"></p>
           </div>
         </js-accordion>
 
         <js-accordion>
           <div class="header" slot="title"><span class="q-count">Q5</span><span class="q">どのような支払い方法がありますか？</span></div>
           <div class="js-accordion--body" slot="body">
-            <p class="a is-size-7">食事を減らすという食事制限ではなく、専門知識を持ったトレーナーが食事のバランスをアドバイスし、食生活を見直しながらコントロールしていきます。</p>
+            <p class="a is-size-7"></p>
           </div>
         </js-accordion>
 
         <js-accordion>
           <div class="header" slot="title"><span class="q-count">Q5</span><span class="q">2人以上でレッスンを受けることはできますか？</span></div>
           <div class="js-accordion--body" slot="body">
-            <p class="a is-size-7">食事を減らすという食事制限ではなく、専門知識を持ったトレーナーが食事のバランスをアドバイスし、食生活を見直しながらコントロールしていきます。</p>
+            <p class="a is-size-7">マンツーマンでのレッスンなのでお客様にあったトレーニングを受けることが可能です。<br>それに加えてエステ施設が併設していますので、外面内面の美を追求することが可能です。</p>
           </div>
         </js-accordion>
       </div>
