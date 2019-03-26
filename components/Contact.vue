@@ -143,7 +143,7 @@
               <div class="control">
                 <label class="checkbox">
                   <input type="checkbox" :checked="agreement" disabled>
-                  <a href="#">利用規約</a>、及び<a href="#">個人情報の取扱</a>に同意する <span class="required">必須</span>
+                  個人情報の取扱に同意する <span class="required">必須</span>
                 </label>
               </div>
             </div>

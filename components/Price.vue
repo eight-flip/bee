@@ -49,13 +49,13 @@
                 <div class="column">
                   <img src="~/assets/img/menu-4-times.png" class="times-img is-pulled-left" alt="4回/月">
                   <div class="is-clearfix"></div>
-                  <p class="price">¥25,000~ &nbsp;</p>
+                  <p class="price">¥45,000~ &nbsp;</p>
                   <p class="is-size-7 pr15">※終日利用OK</p>
                 </div>
                 <div class="column">
                   <img src="~/assets/img/menu-6-times.png" class="times-img is-pulled-left" alt="4回/月">
                   <div class="is-clearfix"></div>
-                  <p class="price">¥37,500 &nbsp;</p>
+                  <p class="price">¥65,000 &nbsp;</p>
                   <p class="is-size-7 pl15">※終日利用OK</p>
                 </div>
               </div>
