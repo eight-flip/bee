@@ -34,7 +34,7 @@ export default {
     Conversion,
     Price,
     Access,
-    //Contact,
+    Contact,
     Faq,
     Footer,
     Copyright,
