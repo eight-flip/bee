@@ -41,7 +41,7 @@
         <div class="box forms has-background-grey-light" data-aos="fade-up">
           <img src="~/assets/img/bee-grey-in-form.png" class="bg-img" alt="background">
           <no-ssr>
-            <form action="/?thanks" name="counseling" method="POST" class="form inbox-container" ref="form" netlify>
+            <form action="/?thanks" name="counseling" method="POST" class="form inbox-container" ref="form">
               <input type="hidden" name="form-name" value="counseling">
               <label class="label">お名前（ふりがな） <span class="required">必須</span></label>
               <input type="hidden" name="お名前（ふりがな）" :value="fullName">
