@@ -80,7 +80,7 @@
       <div class="box-3" data-aos="fade-up">
         <div class="box box-header">
           <span class="label">プリペイド会員</span>
-          <h3>30分加圧1回⋯7,000P</h3>
+          <h3>30分加圧1回⋯8,000P</h3>
         </div>
         <div class="box box-body">
           <table class="table is-bordered is-fullwidth pre-paid">
