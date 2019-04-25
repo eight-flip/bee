@@ -67,6 +67,14 @@ module.exports = {
     */
     extend(config, ctx) {
 
-    }
+    },
+    /* IE対応 */
+    postcss: {
+      plugins: {
+        'postcss-preset-env': {
+          autoprefixer: { grid: true }
+        },
+      },
+    },
   }
 }
