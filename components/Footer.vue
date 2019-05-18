@@ -35,7 +35,7 @@
           </ul>
         </div>
         <div class="column has-text-left is-flex-end">
-          <a href="https://www.instagram.com/beekaatsu/" target="_blank"><img src="~/assets/img/ig.png" class="sns" alt="instagram"></a>
+          <a href="https://www.instagram.com/bee_personal_official/" target="_blank"><img src="~/assets/img/ig.png" class="sns" alt="instagram"></a>
         </div>
         <div class="column">
           <img src="~/assets/img/logo-footer.png" class="logo-footer" alt="footer logo">
