@@ -35,7 +35,15 @@
           </ul>
         </div>
         <div class="column has-text-left is-flex-end">
-          <a href="https://www.instagram.com/bee_personal_official/" target="_blank"><img src="~/assets/img/ig.png" class="sns" alt="instagram"></a>
+          <a href="https://www.instagram.com/bee_personal_official/" target="_blank">
+            <img src="~/assets/img/ig.png" class="sns" alt="instagram">
+            <span style="display:inline-block;">Personal Training Studio Bee</span>
+          </a>
+          <br>
+          <a href="https://www.instagram.com/sweethoney_kudanshita/" target="_blank" class="mt10 is-white">
+            <img src="~/assets/img/ig.png" class="sns" alt="instagram">
+            <span class="small" style="display:inline-block; line-height: 1;">併設エステサロン<br>スウィートハニー</span>
+          </a>
         </div>
         <div class="column">
           <img src="~/assets/img/logo-footer.png" class="logo-footer" alt="footer logo">
@@ -53,6 +61,9 @@
     padding-left: 28px;
     padding-right: 28px;
   }
+  a {
+    color: #fff;
+  }
   .links {
     text-align: left;
     li {
@@ -60,9 +71,6 @@
     }
     li+li {
       margin-top: 15px;
-    }
-    a {
-      color: #fff;
     }
   }
   .columns {
