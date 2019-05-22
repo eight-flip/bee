@@ -56,6 +56,9 @@ module.exports = {
   */
   modules: [
     ['vue-scrollto/nuxt', { duration: 500, offset: -52}],
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-140401769-1'
+    }]
   ],
 
   /*
