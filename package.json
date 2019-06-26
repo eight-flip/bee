@@ -1,0 +1,32 @@
+{
+  "name": "Personal-Training-Studio-Bee",
+  "version": "1.0.0",
+  "description": "パーソナルトレーニングスタジオBeeは九段下駅から徒歩3分の場所にあるパーソナルジムです。 加圧トレーニングは小さな負荷で大きな効果が期待\nできるとても画期的なトレーニング方法です。 当スタジオのスタッフ全員は加圧トレーニングを開発している会社から指導資格を取得している者なので安心して受講していただけます。",
+  "author": "kskhr",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/google-analytics": "2.2.0",
+    "aos": "2.3.4",
+    "bulma": "0.7.4",
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.4.0",
+    "vue-carousel": "0.18.0-alpha",
+    "vue-scrollto": "2.14.0"
+  },
+  "devDependencies": {
+    "node-sass": "4.11.0",
+    "nodemon": "^1.18.9",
+    "sass-loader": "7.1.0"
+  },
+  "browserslist": [
+    "last 2 version",
+    "android >= 4.4",
+    "IE 11"
+  ]
+}

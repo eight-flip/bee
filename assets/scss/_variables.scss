@@ -1,0 +1,22 @@
+@import "~bulma/sass/utilities/mixins";
+$grey-light: #f2f3f5;
+$blue: #487aac;
+$blue-dark: #194a7c;
+$orange: #f8642b;
+$black: #0b0b0b;
+
+$breakpoints: (
+  'sm': 'screen and (min-width: 400px)',
+  'md': 'screen and (min-width: 768px)',
+  'lg': 'screen and (min-width: 1000px)',
+  'xl': 'screen and (min-width: 1200px)',
+) !default;
+
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+$navbar-height: 3.25rem !default
+$for-iPhone5: 374px;

@@ -1,0 +1,81 @@
+@import "~bulma/sass/utilities/mixins";
+.button {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  $font-size: 18px;
+  font-size: 18px;
+  height: 62px;
+  @include tablet() {
+    height: 90px;
+  }
+  &:hover {
+    opacity: 0.6 !important;
+    transition: opacity .3s;
+  }
+
+  &.is-blue {
+    background-color: #487aac;
+    color: #fff;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    border: none;
+
+    @include tablet() {
+      & + &.is-blue {
+        margin-left: 10px;
+      }
+    }
+  }
+
+
+  &.is-outlined {
+    background-color: transparent;
+    border: solid 1px #333333;
+    font-family: '游ゴシック';
+    height: 50px;
+    font-weight: bold;
+    padding: 14px 28px;
+    line-height: 1;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    color: #333;
+    
+    &.is-white {
+      border-color: #fff;
+      color: #fff;
+    }
+    
+    &.is-outlined:before {
+      content: '';
+      bottom: -8px;
+      right: -8px;
+      position: absolute;
+      border-bottom: 1px solid #333;
+      border-right: 1px solid #333;
+      width: 93%;
+      height: 93%;
+    }
+    &.has-right-border:after {
+      content: '';
+      top: 50%;
+      right: calc(-17% - 8px);
+      position: absolute;
+      border-top: 1px solid #fff;
+      width: 34%;
+      height: 90%;
+    }
+
+    &.is-outlined.is-white:before {
+      border-color: #fff;
+    }
+  }
+}
+
+.button.is-white.is-outlined:hover, .button.is-white.is-outlined:focus {
+  background-color: inherit;
+  border-color: inherit;
+  color: inherit;
+  opacity: 1 !important;
+}
