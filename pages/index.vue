@@ -9,13 +9,10 @@
     <Access></Access>
     <Contact></Contact>
     <Faq></Faq>
-<<<<<<< HEAD
-<!--    <Footer></Footer>-->
     <Footer1></Footer1>
+
 <!--    <Footer></Footer>-->
-=======
-    <Footer></Footer>
->>>>>>> origin/master
+
     <Copyright></Copyright>
   </div>
 </template>
@@ -29,12 +26,9 @@ import Price from '~/components/Price.vue'
 import Access from '~/components/Access.vue'
 import Contact from '~/components/Contact.vue'
 import Faq from '~/components/Faq.vue'
-<<<<<<< HEAD
 // import Footer from '~/components/Footer.vue'
 import Footer1 from '~/components/Footer1.vue'
-=======
 import Footer from '~/components/Footer.vue'
->>>>>>> origin/master
 import Copyright from '~/components/Copyright.vue'
 
 export default {
@@ -47,13 +41,7 @@ export default {
     Access,
     Contact,
     Faq,
-<<<<<<< HEAD
     Footer1,
-    // Footer,
-    // Footer,
-=======
-    Footer,
->>>>>>> origin/master
     Copyright,
   },
   mounted() {

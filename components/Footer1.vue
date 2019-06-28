@@ -43,7 +43,7 @@
             <span style="display:inline-block;" class="is-size-6">Bee（ジム）<br>はこちら</span>
           </a>
           <br>
-          <a href="https://www.instagram.com/sweethoney_kudanshita/" target="_blank" class="mt10 is-white">
+          <a href="https://www.instagram.com/sweethoney_kudanshita/" target="_blank">
             <img src="~/assets/img/ig.png" class="sns" alt="instagram">
             <span style="display:inline-block;" class="is-size-6">SweetHoney<br>（エステ）はこちら</span>
           </a>
@@ -54,16 +54,15 @@
             <a><img src="~/assets/img/arrow1.png" class="arrow-img"><span>LINE@</span></a>
           </div>
           <p>Bee（ジム）</p>
-          <a href="#" target="_blank">
+          <a href="http://nav.cx/apINJvU" target="_blank">
             <img src="~/assets/img/line@.png" class="line" alt="line">
-
           </a>
           <br>
-          <p>SweetHoney（エステ）</p>
-          <a href="" target="_blank">
+          <p class="line-sweet">SweetHoney（エステ）</p>
+          <a href="#" target="_blank" class="line-sweet" alt="line">
             <img src="~/assets/img/line@.png" class="line" alt="line">
-
           </a>
+          <div class="block"></div>
         </div>
 <!--        ここまで-->
         <div class="column">
@@ -119,6 +118,17 @@
   .is-flex-end {
     align-self: flex-end;
   }
+  /*エステのline@はまだ作成されていない*/
+  .line-sweet {
+    display: none;
+  }
+
+  .block {
+    width: 50px;
+    height: 40px
+  }
+  /*ここまで！!エステのline@追加されたら消す*/
+
   @include mobile() {
     .logo-footer {
       width: 240px;
