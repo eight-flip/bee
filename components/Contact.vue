@@ -5,8 +5,10 @@
         <h2 class="section-title is-3 is-spaced" data-aos="fade-up">無料カウンセリングのお申し込み</h2>
         <p class="section-subtitle is-4" data-aos="fade-up">CONTACT</p>
 
-        <p class="is-size-7 mb25" data-aos="fade-up">無料カウンセリングのお申込みはこちらからどうぞ。お気軽にご相談ください！</p>
-
+        <p class="is-size-7 mb25" data-aos="fade-up">カウンセリング時間は１時間です。<br>
+          お客様に合わせたプランをご提案します。<br>
+          お気軽にお問い合わせください！
+        </p>
 
         <div class="box contact-box" data-aos="fade-up">
           <div class="box-header">
@@ -34,9 +36,9 @@
               </div>
 
             </div>
-
           </div>
         </div>
+
 
         <div class="box forms has-background-grey-light" data-aos="fade-up">
           <img src="~/assets/img/bee-grey-in-form.png" class="bg-img" alt="background">
@@ -67,6 +69,30 @@
                   <input class="input" name="電話番号" type="tel" placeholder="08012345678" v-model="tel">
                 </div>
               </div>
+
+              <label class="label">希望サービス　<span class="required">必須</span></label>
+              <div class="control">
+                <label class="checkbox">
+                  <input class="input apply" name="service" type="checkbox" v-model="service">
+                </label>
+                <label>ジム体験レッスン申し込み</label>
+
+                <label class="checkbox">
+                  <input class="input apply" name="service" type="checkbox" v-model="service">
+                </label>
+                <label>ホワイトニング申し込み </label>
+                <br>
+
+                <label class="checkbox">
+                  <input class="input apply" name="service" type="checkbox" v-model="service">
+                </label>
+                <label>エステ無料カウンセリング</label>
+
+                <label class="checkbox">
+                  <input class="input apply" name="service" type="checkbox" v-model="service">
+                </label>
+                <label>その他お問い合わせ</label>
+              </div>
               <hr>
 
               <div class="field">
@@ -75,19 +101,16 @@
                     <input type="checkbox" v-model="agreement">
                     個人情報の取扱に同意する <span class="required">必須</span>
                   </label>
-                  <textarea class="privacy-policy" readonly>{{ privacyPolicy }}</textarea>
+                  <textarea class="privacy-policy " readonly>{{ privacyPolicy }}</textarea>
                 </div>
               </div>
 
               <div class="field has-text-centered">
                 <button type="button" class="button is-blue confirm" @click="openConfirmModal();">入力内容を確認する</button>
               </div>
-
             </form>
           </no-ssr>
-
         </div>
-
       </div>
     </section>
 
@@ -136,6 +159,23 @@
 
             <label class="label">電話番号 <span class="is-size-7">※ハイフンの入力は不要です。</span></label>
             <p class="form-value">{{ tel }}</p>
+
+            <label class="label">希望サービス<span class="required">必須</span></label>
+            <label class="checkbox">
+              <input type="checkbox" :checked="service">
+                ジム体験レッスン申し込み
+              <input type="checkbox" :checked="service">
+                ホワイトニング申し込み<br>
+              <input type="checkbox" :checked="service">
+                エステ無料カウンセリング
+              <input type="checkbox" :checked="service">
+                その他お問い合わせ
+            </label>
+
+            <label class="checkbox">
+              <input type="checkbox" :checked="agreement" disabled>
+              個人情報の取扱に同意する <span class="required">必須</span>
+            </label>
 
             <hr>
 
@@ -220,6 +260,7 @@
         mei: '',
         email: '',
         tel: '',
+        service: false,
         hopes: [],
         agreement: false,
         privacyPolicy: privacyPolicy.text,
@@ -227,6 +268,7 @@
         // mei: 'たろう',
         // email: 'tanaka_kudan@example.com',
         // tel: '09012341234',
+        //
         // hopes: ['体験レッスン'],
         // agreement: true,
         thanksModal: 'thanks' in this.$route.query ? true : false,
@@ -242,6 +284,7 @@
         if (this.sei === ''
           || this.mei === ''
           || this.email === ''
+          || this.service === false
           || this.agreement === false) {
           alert('入力されていない項目があります。');
           return false;
@@ -463,7 +506,7 @@
       border-radius: 0;
       border: none;
       font-size: 16px;
-      height: 40px;
+      /*height: 40px;*/
 
       &::placeholder {
         color: #bcbcbc;
@@ -554,4 +597,26 @@
     width: 280px;
     min-width: initial;
   }
+
+
+  /*レスポンシブル！！！*/
+
+  @media (max-width: 768px) {
+
+    input[type="checkbox"]:checked::before {
+      content: "";
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 22px;
+      height: 22px;
+      background: url('~assets/img/check-mark.png');
+      background-position: left;
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: block;
+    }
+  }
+
+/*  ここまで！　*/
 </style>

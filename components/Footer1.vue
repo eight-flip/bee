@@ -5,47 +5,52 @@
         <div class="column">
           <ul class="links">
             <li>
-              <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#about'">ABOUTー <span class="is-size-7">Beeとは？</span></a>
-              <a v-else href="/#about">ABOUTー <span class="is-size-7">Beeとは？</span></a>
+              <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#about'">ABOUTー<span class="is-size-7">Beeとは？</span></a>
+              <a v-else href="/#about">ABOUTー<span class="is-size-7">Beeとは？</span></a>
             </li>
             <li>
-              <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#studio'">STUDIOー <span class="is-size-7">施設紹介</span></a>
-              <a v-else href="/#studio">STUDIOー <span class="is-size-7">施設紹介</span></a>
+              <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#studio'">STUDIOー<span class="is-size-7">施設紹介</span></a>
+              <a v-else href="/#studio">STUDIOー<span class="is-size-7">施設紹介</span></a>
             </li>
             <li>
-              <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#price'">MENU&PRICEー <span class="is-size-7">メニュー・料金</span></a>
-              <a v-else href="/#price">MENU&PRICEー <span class="is-size-7">メニュー・料金</span></a>
+              <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#price'">MENU&PRICEー<span class="is-size-7">メニュー料金</span></a>
+              <a v-else href="/#price">MENU&PRICEー<span class="is-size-7">メニュー・料金</span></a>
             </li>
           </ul>
         </div>
         <div class="column">
           <ul class="links">
             <li>
-              <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#access'">ACCESSー <span class="is-size-7">アクセス</span></a>
-              <a v-else href="/#access">ACCESSー <span class="is-size-7">アクセス</span></a>
+              <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#access'">ACCESSー<span class="is-size-7">アクセス</span></a>
+              <a v-else href="/#access">ACCESSー<span class="is-size-7">アクセス</span></a>
             </li>
             <li>
-              <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#contact'">CONTACTー <span class="is-size-7">無料カウンセリング</span></a>
-              <a v-else href="/#contact">CONTACTー <span class="is-size-7">無料カウンセリング</span></a>
+              <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#contact'">CONTACTー<span class="is-size-7">無料カウンセリング</span></a>
+              <a v-else href="/#contact">CONTACTー<span class="is-size-7">無料カウンセリング</span></a>
             </li>
             <li>
-              <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#faq'">Q&Aー <span class="is-size-7">よくあるご質問</span></a>
-              <a v-else href="/#faq">Q&Aー <span class="is-size-7">よくあるご質問</span></a>
+              <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#faq'">Q&Aー<span class="is-size-7">よくあるご質問</span></a>
+              <a v-else href="/#faq">Q&Aー<span class="is-size-7">よくあるご質問</span></a>
             </li>
           </ul>
         </div>
+       <!--    白の縦線    -->
+          <div class="white-border">
+            <p></p>
+          </div>
+　　　　<!--    ここまで！！    -->
         <div class="column has-text-left is-flex-end">
-          <div class="line-heading">
+          <div class="instagram-heading">
             <a><img src="~/assets/img/arrow1.png" class="arrow-img"><span>Instagram</span></a>
           </div>
           <a href="https://www.instagram.com/bee_personal_official/" target="_blank">
             <img src="~/assets/img/ig.png" class="sns" alt="instagram">
-            <span style="display:inline-block;" class="is-size-6">Bee（ジム）<br>はこちら</span>
+            <span style="display:inline-block;" class="is-size-7">Bee（ジム）<br>はこちら</span>
           </a>
           <br>
           <a href="https://www.instagram.com/sweethoney_kudanshita/" target="_blank">
             <img src="~/assets/img/ig.png" class="sns" alt="instagram">
-            <span style="display:inline-block;" class="is-size-6">SweetHoney<br>（エステ）はこちら</span>
+            <span style="display:inline-block;" class="is-size-7">SweetHoney<br>（エステ）はこちら</span>
           </a>
         </div>
 <!--        コード追加-->
@@ -53,7 +58,7 @@
           <div class="line-heading">
             <a><img src="~/assets/img/arrow1.png" class="arrow-img"><span>LINE@</span></a>
           </div>
-          <p>Bee（ジム）</p>
+          <p class="is-size-7">Bee（ジム）</p>
           <a href="http://nav.cx/apINJvU" target="_blank">
             <img src="~/assets/img/line@.png" class="line" alt="line">
           </a>
@@ -109,9 +114,26 @@
     }
   }
   .sns {
-    width: 40px;
-    height: 40px;
+    /*width: 40px;*/
+    /*height: 40px;*/
+    width: 35px;
+    height: 35px;
   }
+
+  .instagram-heading, .line-heading {
+    margin-bottom: 2%;
+  }
+
+  /*白の縦線ボーダー*/
+  .white-border p {
+    content: '';
+    width: 1px;
+    height: 110px;
+    background-color: #fff;
+    margin: 0 20px;
+  }
+  /*ここまで*/
+
   .sns + .sns {
     margin-left: 24px;
   }
@@ -135,4 +157,15 @@
       text-align: left;
     }
   }
+
+  @media (max-width: 768px) {
+    .white-border p {
+      display: none;
+    }
+
+    .white-border {
+      border-bottom: solid 1px #fff;
+    }
+  }
+
 </style>

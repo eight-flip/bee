@@ -34,6 +34,14 @@
         <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#faq'" class="navbar-item" @click="toggleNav()"><span>Q&A</span></a>
         <a v-else href="/#faq" class="navbar-item" @click="toggleNav()"><span>Q&A</span></a>
 
+
+        <a v-if href="#" class="button is-blue">
+              <span class="icon is-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="26" viewBox="0 0 36 26"><g transform="translate(-713.067 -2345.684)"><path d="M35.109,26H.891A.9.9,0,0,1,0,25.1V.9A.9.9,0,0,1,.891,0H35.109A.9.9,0,0,1,36,.9V25.1A.9.9,0,0,1,35.109,26Z" transform="translate(713.068 2345.684)" fill="#fff"/><path d="M4.5,5.5l12.659,8.359L29.607,5.5" transform="translate(713.905 2345.759)" fill="none" stroke="#487aac" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/></g></svg>
+              </span>
+          <span class="ml5">お問い合わせはこちら</span>
+        </a>
+
         <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#contact'" class="button is-outlined is-hidden-desktop" @click="toggleNav()">体験申し込みはこちら</a>
         <a v-else href="/#contact" class="button is-outlined is-hidden-desktop" @click="toggleNav()">体験申し込みはこちら</a>
 
@@ -184,5 +192,10 @@
       }
     }
   }
+
+ .button.is-blue {
+   height: 45px;
+   margin: 1% 0 0 0 ;
+ }
 
 </style>
