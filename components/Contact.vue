@@ -70,6 +70,26 @@
                 </div>
               </div>
 
+              <label class="label">チェックボックステスト</label>
+              <div class="field-body">
+                <div class="field">
+                  <div class="control">
+                    <label class="checkbox is-fullwidth">
+                      <input type="checkbox">
+                      Remember me
+                    </label>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="control">
+                    <label class="checkbox is-fullwidth">
+                      <input type="checkbox">
+                      Remember me
+                    </label>
+                  </div>
+                </div>
+              </div>
+
               <label class="label">希望サービス　<span class="required">必須</span></label>
               <div class="control">
                 <label class="checkbox">
