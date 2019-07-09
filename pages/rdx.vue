@@ -1,5 +1,11 @@
-<script type="text/javascript">
+<template>
+  <div>
+  </div>
+</template>
 
+<script>
+
+if (process.client) {
   (function(callback){
   var script = document.createElement("script");
   script.type = "text/javascript";
@@ -23,5 +29,5 @@
       var rttargeturl = match && decodeURIComponent(match[1].replace(/\+/g, ' '));
       location.href = rttargeturl;
   }));
-
+}
 </script>
