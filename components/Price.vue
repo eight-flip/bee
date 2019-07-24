@@ -22,13 +22,13 @@
                   <img src="~/assets/img/menu-4-times.png" class="times-img is-pulled-left" alt="4回/月">
                   <div class="is-clearfix"></div>
                   <p class="price">¥25,000~ &nbsp;</p>
-                  <p class="is-size-7 pr15">※上記はDAY会員の料金です（平日昼12〜17時限定）</p>
+                  <p class="is-size-7 pr15">※上記はDAY会員の料金です<br>（平日9時〜17時限定）</p>
                 </div>
                 <div class="column">
                   <img src="~/assets/img/menu-6-times.png" class="times-img is-pulled-left" alt="4回/月">
                   <div class="is-clearfix"></div>
                   <p class="price">¥37,500 &nbsp;</p>
-                  <p class="is-size-7 pl15">※上記はDAY会員の料金です（平日昼12〜17時限定）</p>
+                  <p class="is-size-7 pl15">※上記はDAY会員の料金です<br>（平日9時〜17時限定）</p>
                 </div>
               </div>
             </div>

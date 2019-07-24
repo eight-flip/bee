@@ -63,8 +63,8 @@
             <img src="~/assets/img/line@.png" class="line" alt="line">
           </a>
           <br>
-          <p class="line-sweet">SweetHoney（エステ）</p>
-          <a href="#" target="_blank" class="line-sweet" alt="line">
+          <p class="is-size-7">SweetHoney（エステ）</p>
+          <a target="_blank" class="line-sweet" alt="line">
             <img src="~/assets/img/line@.png" class="line" alt="line">
           </a>
           <div class="block"></div>
@@ -141,14 +141,14 @@
     align-self: flex-end;
   }
   /*エステのline@はまだ作成されていない*/
-  .line-sweet {
-    display: none;
-  }
+  /*.line-sweet {*/
+  /*  display: none;*/
+  /*}*/
 
-  .block {
-    width: 50px;
-    height: 40px
-  }
+  /*.block {*/
+  /*  width: 50px;*/
+  /*  height: 40px*/
+  /*}*/
   /*ここまで！!エステのline@追加されたら消す*/
 
   @include mobile() {

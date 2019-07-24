@@ -5,9 +5,12 @@
         <h2 class="section-title is-3 is-spaced" data-aos="fade-up">無料カウンセリングのお申し込み</h2>
         <p class="section-subtitle is-4" data-aos="fade-up">CONTACT</p>
 
-        <p class="is-size-7 mb25" data-aos="fade-up">カウンセリング時間は１時間です。<br>
-          お客様に合わせたプランをご提案します。<br>
-          お気軽にお問い合わせください！
+        <label class="label">ジム、エステ、ホワイトニングのお問い合わせはこちらからどうぞ！</label>
+        <p class="is-size-7 mb25" data-aos="fade-up">
+          お問い合わせ後に担当者からご連絡させていただきます
+
+          <br>
+
         </p>
 
         <div class="box contact-box" data-aos="fade-up">
@@ -71,28 +74,68 @@
               </div>
 
               <label class="label">希望サービス　<span class="required">必須</span></label>
-              <div class="control">
-                <label class="checkbox">
-                  <input class="input apply" name="service" type="checkbox" v-model="service">
-                </label>
-                <label>ジム体験レッスン申し込み</label>
-
-                <label class="checkbox">
-                  <input class="input apply" name="service" type="checkbox" v-model="service">
-                </label>
-                <label>ホワイトニング申し込み </label>
-                <br>
-
-                <label class="checkbox">
-                  <input class="input apply" name="service" type="checkbox" v-model="service">
-                </label>
-                <label>エステ無料カウンセリング</label>
-
-                <label class="checkbox">
-                  <input class="input apply" name="service" type="checkbox" v-model="service">
-                </label>
-                <label>その他お問い合わせ</label>
+              <div class="field-body">
+                <div class="field">
+                  <div class="control">
+                    <label class="checkbox is-fullwidth">
+                      <input type="checkbox">
+                      ジム体験レッスン申し込み　　
+                    </label>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="control">
+                    <label class="checkbox is-fullwidth">
+                      <input type="checkbox">
+                      ホワイトニング申し込み
+                    </label>
+                  </div>
+                </div>
               </div>
+
+              <div class="field-body">
+                <div class="field">
+                  <div class="control">
+                    <label class="checkbox is-fullwidth">
+                      <input type="checkbox">
+                      エステ無料カウンセリング
+                    </label>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="control">
+                    <label class="checkbox is-fullwidth">
+                      <input type="checkbox">
+                      その他お問い合わせ
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+
+<!--              <label class="label">希望サービス　<span class="required">必須</span></label>-->
+<!--              <div class="control">-->
+<!--                <label class="checkbox">-->
+<!--                  <input class="input apply" name="service" type="checkbox" v-model="service">-->
+<!--                </label>-->
+<!--                <label>ジム体験レッスン申し込み</label>-->
+
+<!--                <label class="checkbox">-->
+<!--                  <input class="input apply" name="service" type="checkbox" v-model="service">-->
+<!--                </label>-->
+<!--                <label>ホワイトニング申し込み </label>-->
+<!--                <br>-->
+
+<!--                <label class="checkbox">-->
+<!--                  <input class="input apply" name="service" type="checkbox" v-model="service">-->
+<!--                </label>-->
+<!--                <label>エステ無料カウンセリング</label>-->
+
+<!--                <label class="checkbox">-->
+<!--                  <input class="input apply" name="service" type="checkbox" v-model="service">-->
+<!--                </label>-->
+<!--                <label>その他お問い合わせ</label>-->
+<!--              </div>-->
               <hr>
 
               <div class="field">

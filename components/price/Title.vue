@@ -14,6 +14,9 @@
         <div class="column">
           <a href="#" v-scroll-to="'#other'" class="button is-outlined"><i class="arrow arrow-down"></i>その他メニュー</a>
         </div>
+        <div class="column">
+          <a href="#" v-scroll-to="'#other'" class="button is-outlined"><i class="arrow arrow-down"></i>エステメニュー</a>
+        </div>
       </div>
     </div>
 
