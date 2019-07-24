@@ -50,6 +50,47 @@ export default {
     }
   },
 }
+
+if (process.client) {
+  // TAHNKS script
+  var param = location.search;
+  if(param.match('thanks')){
+    (function(){
+      function loadScriptRTCV(callback){
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = 'https://www.rentracks.jp/js/itp/rt.track.js?t=' + (new Date()).getTime();
+      if ( script.readyState ) {
+        script.onreadystatechange = function() {
+        if ( script.readyState === 'loaded' || script.readyState === 'complete' ) {
+          script.onreadystatechange = null;
+          callback();
+        };
+      };
+    } else {
+      script.onload = function() {
+      callback();
+      };
+    };
+    document.getElementsByTagName('head')[0].appendChild(script);
+    }
+    loadScriptRTCV(function(){
+      var date = new Date();
+      var timestamp = date.getTime();
+      _rt.sid = 4109;
+      _rt.pid = 6148;
+      _rt.price = 0;
+      _rt.reward = -1;
+      _rt.cname = '';
+      _rt.ctel = '';
+      _rt.cemail = '';
+      _rt.cinfo = timestamp;
+      rt_tracktag();
+    });
+    }(function(){}));
+  }
+}
+
 </script>
 
 <style>
