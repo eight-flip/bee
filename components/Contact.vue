@@ -85,7 +85,7 @@
                 <div class="field">
                   <div class="control">
                     <label class="checkbox is-fullwidth">
-                      <input type="checkbox">
+                      <input type="checkbox" >
                       ホワイトニング申し込み
                     </label>
                   </div>
@@ -96,7 +96,7 @@
                 <div class="field">
                   <div class="control">
                     <label class="checkbox is-fullwidth">
-                      <input type="checkbox">
+                      <input type="checkbox" >
                       エステ無料カウンセリング
                     </label>
                   </div>
@@ -112,29 +112,6 @@
               </div>
 
 
-<!--              <label class="label">希望サービス　<span class="required">必須</span></label>-->
-<!--              <div class="control">-->
-<!--                <label class="checkbox">-->
-<!--                  <input class="input apply" name="service" type="checkbox" v-model="service">-->
-<!--                </label>-->
-<!--                <label>ジム体験レッスン申し込み</label>-->
-
-<!--                <label class="checkbox">-->
-<!--                  <input class="input apply" name="service" type="checkbox" v-model="service">-->
-<!--                </label>-->
-<!--                <label>ホワイトニング申し込み </label>-->
-<!--                <br>-->
-
-<!--                <label class="checkbox">-->
-<!--                  <input class="input apply" name="service" type="checkbox" v-model="service">-->
-<!--                </label>-->
-<!--                <label>エステ無料カウンセリング</label>-->
-
-<!--                <label class="checkbox">-->
-<!--                  <input class="input apply" name="service" type="checkbox" v-model="service">-->
-<!--                </label>-->
-<!--                <label>その他お問い合わせ</label>-->
-<!--              </div>-->
               <hr>
 
               <div class="field">
@@ -187,9 +164,10 @@
               </div>
 
             </div>
-
           </div>
         </div>
+
+
         <div class="box forms has-background-grey-light">
           <div class="form inbox-container">
             <img src="~/assets/img/bee-grey-in-form.png" class="bg-img" alt="background">
@@ -214,21 +192,13 @@
                 その他お問い合わせ
             </label>
 
-            <label class="checkbox">
+            <label class="checkbox" style="margin-top: 20px;">
               <input type="checkbox" :checked="agreement" disabled>
               個人情報の取扱に同意する <span class="required">必須</span>
             </label>
 
             <hr>
 
-            <div class="field">
-              <div class="control">
-                <label class="checkbox">
-                  <input type="checkbox" :checked="agreement" disabled>
-                  個人情報の取扱に同意する <span class="required">必須</span>
-                </label>
-              </div>
-            </div>
 
           </div>
 
@@ -298,21 +268,21 @@
     data() {
       return {
         confirmModal: false,
-        sei: '',
-        mei: '',
-        email: '',
-        tel: '',
-        service: false,
-        hopes: [],
-        agreement: false,
+        // sei: '',
+        // mei: '',
+        // email: '',
+        // tel: '',
+        // service: false,
+        // hopes: [],
+        // agreement: false,
         privacyPolicy: privacyPolicy.text,
-        // sei: 'たなか',
-        // mei: 'たろう',
-        // email: 'tanaka_kudan@example.com',
-        // tel: '09012341234',
-        //
-        // hopes: ['体験レッスン'],
-        // agreement: true,
+        sei: 'たなか',
+        mei: 'たろう',
+        email: 'tanaka_kudan@example.com',
+        tel: '09012341234',
+
+        hopes: ['体験レッスン'],
+        agreement: true,
         thanksModal: 'thanks' in this.$route.query ? true : false,
       };
     },
@@ -641,6 +611,9 @@
   }
 
 
+  .checkbox input {
+    margin-top: 5px;
+  }
   /*レスポンシブル！！！*/
 
   @media (max-width: 768px) {
