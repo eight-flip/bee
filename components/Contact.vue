@@ -273,15 +273,15 @@
         // email: '',
         // tel: '',
         // service: false,
-        // hopes: [],
+        // hopes: []
         // agreement: false,
         privacyPolicy: privacyPolicy.text,
         sei: 'たなか',
         mei: 'たろう',
         email: 'tanaka_kudan@example.com',
         tel: '09012341234',
-
-        hopes: ['体験レッスン'],
+        hopes: [],
+        service: true,
         agreement: true,
         thanksModal: 'thanks' in this.$route.query ? true : false,
       };
