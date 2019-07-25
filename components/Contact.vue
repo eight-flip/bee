@@ -15,7 +15,6 @@
 
         <div class="box contact-box" data-aos="fade-up">
           <div class="box-header">
-
             <div class="columns steps is-mobile inbox-container">
               <div class="column">
                 <div class="box step-1 active">
@@ -74,7 +73,7 @@
               </div>
 
               <label class="label">希望サービス　<span class="required">必須</span></label>
-              <div class="field-body">
+              <div class="field-body" style="padding-bottom: 10px;">
                 <div class="field">
                   <div class="control">
                     <label class="checkbox is-fullwidth">

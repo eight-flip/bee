@@ -58,16 +58,13 @@
           <div class="line-heading">
             <a><img src="~/assets/img/arrow1.png" class="arrow-img"><span>LINE@</span></a>
           </div>
-          <p class="is-size-7">Bee（ジム）</p>
-          <a href="http://nav.cx/apINJvU" target="_blank">
-            <img src="~/assets/img/line@.png" class="line" alt="line">
+          <p class="is-size-7">お得なジム/最新エステ情報は<br>こちらです</p>
+          <a href="http://nav.cx/apINJvU" target="_blank" class="line">
+            <img src="~/assets/img/line@.png">
           </a>
           <br>
-          <p class="is-size-7">SweetHoney（エステ）</p>
-          <a target="_blank" class="line-sweet" alt="line">
-            <img src="~/assets/img/line@.png" class="line" alt="line">
-          </a>
-          <div class="block"></div>
+
+
         </div>
 <!--        ここまで-->
         <div class="column">
@@ -120,9 +117,13 @@
     height: 35px;
   }
 
-  .instagram-heading, .line-heading {
+  .instagram-heading {
     margin-bottom: 2%;
   }
+
+   .line-heading{
+
+   }
 
   /*白の縦線ボーダー*/
   .white-border p {
@@ -140,16 +141,15 @@
   .is-flex-end {
     align-self: flex-end;
   }
-  /*エステのline@はまだ作成されていない*/
-  /*.line-sweet {*/
-  /*  display: none;*/
-  /*}*/
 
-  /*.block {*/
-  /*  width: 50px;*/
-  /*  height: 40px*/
-  /*}*/
-  /*ここまで！!エステのline@追加されたら消す*/
+  .line {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  .column has-text-left p {
+    margin-bottom: 10px;
+  }
 
   @include mobile() {
     .logo-footer {

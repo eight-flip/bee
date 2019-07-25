@@ -48,8 +48,8 @@
   @import "~assets/scss/_variables.scss";
   .section {
     padding: 36px 10px;
-    /*background: url('~assets/img/conversion-bg.jpg') no-repeat;*/
-    background-color: rgba(0,0,0,0.8);
+    background: url('~assets/img/conversion-bg.jpg') no-repeat;
+    /*background-color: rgba(0,0,0,0.8);*/
     background-size: cover;
     position: relative;
     &:before {
