@@ -77,7 +77,7 @@
                 <div class="field">
                   <div class="control">
                     <label class="checkbox is-fullwidth">
-                      <input type="checkbox">
+                      <input type="checkbox" id="zym" value="ジム体験レッスン申し込み" v-model="hopes">
                       ジム体験レッスン申し込み　　
                     </label>
                   </div>
@@ -85,7 +85,7 @@
                 <div class="field">
                   <div class="control">
                     <label class="checkbox is-fullwidth">
-                      <input type="checkbox" >
+                      <input type="checkbox" id="ホワイトニング申し込み" value="ホワイトニング申し込み" v-model="hopes">
                       ホワイトニング申し込み
                     </label>
                   </div>
@@ -96,7 +96,7 @@
                 <div class="field">
                   <div class="control">
                     <label class="checkbox is-fullwidth">
-                      <input type="checkbox" >
+                      <input type="checkbox" id="エステ無料カウンセリング" value="エステ無料カウンセリング" v-model="hopes" >
                       エステ無料カウンセリング
                     </label>
                   </div>
@@ -104,7 +104,7 @@
                 <div class="field">
                   <div class="control">
                     <label class="checkbox is-fullwidth">
-                      <input type="checkbox">
+                      <input type="checkbox" id="その他お問い合わせ" value="その他お問い合わせ" v-model="hopes">
                       その他お問い合わせ
                     </label>
                   </div>
@@ -181,25 +181,50 @@
             <p class="form-value">{{ tel }}</p>
 
             <label class="label">希望サービス<span class="required">必須</span></label>
-            <label class="checkbox">
-              <input type="checkbox" :checked="service">
-                ジム体験レッスン申し込み
-              <input type="checkbox" :checked="service">
-                ホワイトニング申し込み<br>
-              <input type="checkbox" :checked="service">
-                エステ無料カウンセリング
-              <input type="checkbox" :checked="service">
-                その他お問い合わせ
-            </label>
+            <div class="field-body" style="padding-bottom: 10px;">
+              <div class="field">
+                <div class="control">
+                  <label class="checkbox is-fullwidth">
+                    <input type="checkbox" id="zym" value="ジム体験レッスン申し込み" v-model="hopes" disabled>
+                    ジム体験レッスン申し込み　　
+                  </label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="control">
+                  <label class="checkbox is-fullwidth">
+                    <input type="checkbox" id="ホワイトニング申し込み" value="ホワイトニング申し込み" v-model="hopes" disabled>
+                    ホワイトニング申し込み
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <label class="checkbox is-fullwidth">
+                    <input type="checkbox" id="エステ無料カウンセリング" value="エステ無料カウンセリング" v-model="hopes" disabled>
+                    エステ無料カウンセリング
+                  </label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="control">
+                  <label class="checkbox is-fullwidth">
+                    <input type="checkbox" id="その他お問い合わせ" value="その他お問い合わせ" v-model="hopes" disabled>
+                    その他お問い合わせ
+                  </label>
+                </div>
+              </div>
+            </div>
+
 
             <label class="checkbox" style="margin-top: 20px;">
               <input type="checkbox" :checked="agreement" disabled>
               個人情報の取扱に同意する <span class="required">必須</span>
             </label>
-
             <hr>
-
-
           </div>
 
           <div class="field is-grouped is-grouped-centered is-grouped-multiline submit-area">
@@ -268,21 +293,21 @@
     data() {
       return {
         confirmModal: false,
-        // sei: '',
-        // mei: '',
-        // email: '',
-        // tel: '',
-        // service: false,
-        // hopes: []
-        // agreement: false,
-        privacyPolicy: privacyPolicy.text,
-        sei: 'たなか',
-        mei: 'たろう',
-        email: 'tanaka_kudan@example.com',
-        tel: '09012341234',
+        sei: '',
+        mei: '',
+        email: '',
+        tel: '',
+        service: false,
         hopes: [],
-        service: true,
-        agreement: true,
+        agreement: false,
+        privacyPolicy: privacyPolicy.text,
+        // sei: 'たなか',
+        // mei: 'たろう',
+        // email: 'tanaka_kudan@example.com',
+        // tel: '09012341234',
+        // hopes: [],
+        // service: true,
+        // agreement: true,
         thanksModal: 'thanks' in this.$route.query ? true : false,
       };
     },
@@ -296,7 +321,8 @@
         if (this.sei === ''
           || this.mei === ''
           || this.email === ''
-          || this.service === false
+          || this.tel === ''
+          || this.hopes === null
           || this.agreement === false) {
           alert('入力されていない項目があります。');
           return false;
