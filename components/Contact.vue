@@ -77,7 +77,7 @@
                 <div class="field">
                   <div class="control">
                     <label class="checkbox is-fullwidth">
-                      <input type="checkbox" id="zym" value="ジム体験レッスン申し込み" v-model="hopes">
+                      <input type="checkbox" id="zym" name="zym" value="ジム体験レッスン申し込み" v-model="hopes">
                       ジム体験レッスン申し込み　　
                     </label>
                   </div>
@@ -85,7 +85,7 @@
                 <div class="field">
                   <div class="control">
                     <label class="checkbox is-fullwidth">
-                      <input type="checkbox" id="ホワイトニング申し込み" value="ホワイトニング申し込み" v-model="hopes">
+                      <input type="checkbox" id="ホワイトニング申し込み" name="whitening" value="ホワイトニング申し込み" v-model="hopes">
                       ホワイトニング申し込み
                     </label>
                   </div>
@@ -96,7 +96,7 @@
                 <div class="field">
                   <div class="control">
                     <label class="checkbox is-fullwidth">
-                      <input type="checkbox" id="エステ無料カウンセリング" value="エステ無料カウンセリング" v-model="hopes" >
+                      <input type="checkbox" id="エステ無料カウンセリング" name="este" value="エステ無料カウンセリング" v-model="hopes" >
                       エステ無料カウンセリング
                     </label>
                   </div>
@@ -104,7 +104,7 @@
                 <div class="field">
                   <div class="control">
                     <label class="checkbox is-fullwidth">
-                      <input type="checkbox" id="その他お問い合わせ" value="その他お問い合わせ" v-model="hopes">
+                      <input type="checkbox" id="その他お問い合わせ" value="その他お問い合わせ" name="other" v-model="hopes" >
                       その他お問い合わせ
                     </label>
                   </div>
