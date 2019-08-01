@@ -86,7 +86,7 @@
                 <div class="field">
                   <div class="control">
                     <label class="checkbox is-fullwidth" for="希望サービス[]">
-                      <input class="input" type="checkbox" name="ホワイトニング申し込み" id="希望サービス[]" value="ホワイトニング申し込み" v-model="hopes">
+                      <input class="input" type="checkbox" id="希望サービス[]" name="ホワイトニング申し込み" value="ホワイトニング申し込み" v-model="hopes">
                       ホワイトニング申し込み
                     </label>
                   </div>
@@ -97,7 +97,7 @@
                 <div class="field">
                   <div class="control">
                     <label class="checkbox is-fullwidth" for="希望サービス[]">
-                      <input class="input" type="checkbox" name="エステ無料カウンセリング" id="希望サービス[]" value="エステ無料カウンセリング" v-model="hopes">
+                      <input class="input" type="checkbox" id="希望サービス[]" name="エステ無料カウンセリング" value="エステ無料カウンセリング" v-model="hopes">
                       エステ無料カウンセリング
                     </label>
                   </div>
@@ -105,7 +105,7 @@
                 <div class="field">
                   <div class="control">
                     <label class="checkbox is-fullwidth" for="希望サービス[]" >
-                      <input class="input" type="checkbox" name="その他お問い合わせ" id="希望サービス[]" value="その他お問い合わせ" v-model="hopes">
+                      <input class="input" type="checkbox"  id="希望サービス[]" name="その他お問い合わせ" value="その他お問い合わせ" v-model="hopes">
                       その他お問い合わせ
                     </label>
                   </div>
