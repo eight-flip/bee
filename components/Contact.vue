@@ -77,16 +77,16 @@
               <div class="field-body" style="padding-bottom: 10px;">
                 <div class="field">
                   <div class="control">
-                    <label class="checkbox is-fullwidth" for="希望サービス[]" >
-                      <input class="input" type="checkbox" id="希望サービス[]" name="ジム体験レッスン申し込み" value="ジム体験レッスン申し込み" v-model="hopes">
+                    <label class="checkbox is-fullwidth" for="希望サービス" >
+                      <input class="input" type="checkbox" id="希望サービス" name="ジム体験レッスン申し込み" value="ジム体験レッスン申し込み" v-model="hopes">
                       ジム体験レッスン申し込み　　
                     </label>
                   </div>
                 </div>
                 <div class="field">
                   <div class="control">
-                    <label class="checkbox is-fullwidth" for="希望サービス[]">
-                      <input class="input" type="checkbox" name="ホワイトニング申し込み" id="希望サービス[]" value="ホワイトニング申し込み" v-model="hopes">
+                    <label class="checkbox is-fullwidth" for="希望サービス">
+                      <input class="input" type="checkbox" name="ホワイトニング申し込み" id="希望サービス" value="ホワイトニング申し込み" v-model="hopes">
                       ホワイトニング申し込み
                     </label>
                   </div>
@@ -97,16 +97,16 @@
               <div class="field-body">
                 <div class="field">
                   <div class="control">
-                    <label class="checkbox is-fullwidth" for="希望サービス[]">
-                      <input class="input" type="checkbox" name="エステ無料カウンセリング" id="希望サービス[]" value="エステ無料カウンセリング" v-model="hopes" >
+                    <label class="checkbox is-fullwidth" for="希望サービス">
+                      <input class="input" type="checkbox" name="エステ無料カウンセリング" id="希望サービス" value="エステ無料カウンセリング" v-model="hopes" >
                       エステ無料カウンセリング
                     </label>
                   </div>
                 </div>
                 <div class="field">
                   <div class="control">
-                    <label class="checkbox is-fullwidth">
-                      <input class="input" type="checkbox" name="その他お問い合わせ" id="希望サービス[]" value="その他お問い合わせ" v-model="hopes" >
+                    <label class="checkbox is-fullwidth" for="希望サービス">
+                      <input class="input" type="checkbox" name="その他お問い合わせ" id="希望サービス" value="その他お問い合わせ" v-model="hopes" >
                       その他お問い合わせ
                     </label>
                   </div>
