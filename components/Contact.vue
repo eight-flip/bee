@@ -46,6 +46,7 @@
           <img src="~/assets/img/bee-grey-in-form.png" class="bg-img" alt="background">
           <no-ssr>
             <form action="/?thanks" name="counseling" method="POST" class="form inbox-container" ref="form">
+
               <input type="hidden" name="form-name" value="counseling">
               <label class="label">お名前（ふりがな） <span class="required">必須</span></label>
               <input type="hidden" name="お名前（ふりがな）" :value="fullName">
@@ -76,27 +77,28 @@
               <div class="field-body" style="padding-bottom: 10px;">
                 <div class="field">
                   <div class="control">
-                    <label class="checkbox is-fullwidth">
-                      <input class="input" type="checkbox" id="ジム" name="希望サービス[]" value="ジム体験レッスン申し込み" v-model="hopes">
+                    <label class="checkbox is-fullwidth" for="希望サービス[]" >
+                      <input class="input" type="checkbox" id="希望サービス[]" name="ジム体験レッスン申し込み" value="ジム体験レッスン申し込み" v-model="hopes">
                       ジム体験レッスン申し込み　　
                     </label>
                   </div>
                 </div>
                 <div class="field">
                   <div class="control">
-                    <label class="checkbox is-fullwidth">
-                      <input class="input" type="checkbox" name="希望サービス[]" value="ホワイトニング申し込み" v-model="hopes">
+                    <label class="checkbox is-fullwidth" for="希望サービス[]">
+                      <input class="input" type="checkbox" name="ホワイトニング申し込み" id="希望サービス[]" value="ホワイトニング申し込み" v-model="hopes">
                       ホワイトニング申し込み
                     </label>
                   </div>
                 </div>
               </div>
 
+
               <div class="field-body">
                 <div class="field">
                   <div class="control">
-                    <label class="checkbox is-fullwidth">
-                      <input class="input" type="checkbox" name="希望サービス[]" value="エステ無料カウンセリング" v-model="hopes" >
+                    <label class="checkbox is-fullwidth" for="希望サービス[]">
+                      <input class="input" type="checkbox" name="エステ無料カウンセリング" id="希望サービス[]" value="エステ無料カウンセリング" v-model="hopes" >
                       エステ無料カウンセリング
                     </label>
                   </div>
@@ -104,7 +106,7 @@
                 <div class="field">
                   <div class="control">
                     <label class="checkbox is-fullwidth">
-                      <input class="input" type="checkbox" name="希望サービス[]" value="その他お問い合わせ" v-model="hopes" >
+                      <input class="input" type="checkbox" name="その他お問い合わせ" id="希望サービス[]" value="その他お問い合わせ" v-model="hopes" >
                       その他お問い合わせ
                     </label>
                   </div>
