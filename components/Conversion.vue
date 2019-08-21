@@ -1,3 +1,4 @@
+<!--/参考にする-->
 <template>
   <section id="conversion" class="section has-text-centered has-bg-img">
     <div class="card" data-aos="fade-up">

@@ -5,7 +5,7 @@
         <h2 class="section-title is-3 is-spaced" data-aos="fade-up">無料カウンセリングのお申し込み</h2>
         <p class="section-subtitle is-4" data-aos="fade-up">CONTACT</p>
 
-        <label class="label">ジム、エステ、ホワイトニングのお問い合わせはこちらからどうぞ！</label>
+        <label class="label" data-aos="fade-up">ジム、エステ、ホワイトニングのお問い合わせはこちらからどうぞ！</label>
         <p class="is-size-7 mb25" data-aos="fade-up">
           お問い合わせ後に担当者からご連絡させていただきます
 
@@ -66,7 +66,7 @@
                 </div>
               </div>
 
-              <label class="label">電話番号 <span class="is-size-7">※ハイフンの入力は不要です。</span></label>
+              <label class="label">電話番号 <span class="required">必須</span><span class="is-size-7">　※ハイフンの入力は不要です。</span></label>
               <div class="field">
                 <div class="control is-expanded">
                   <input class="input" name="電話番号" type="tel" placeholder="08012345678" v-model="tel">

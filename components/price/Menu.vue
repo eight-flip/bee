@@ -1,8 +1,8 @@
 <template>
   <section class="section has-text-centered has-background-grey-light">
+<!--    idでスクロールを定義している-->
     <div id="personal" class="container">
       <h2 class="title" data-aos="fade-up">パーソナルトレーニング</h2>
-
       <div class="box-1" data-aos="fade-up">
         <div class="box box-header">
           <span class="label">月会員</span>
@@ -26,7 +26,7 @@
             <tbody>
               <tr>
                 <th><span class="membership">DAY会員</span><br class="is-hidden-tablet"><span class="note">（平日昼<br>12〜17時限定）</span></th>
-                <td class="price">¥25,000</td>
+                <td class="https://bulma.io/documentation/elements/box/ce">¥25,000</td>
                 <td class="price">¥37,500</td>
               </tr>
               <tr>
@@ -43,6 +43,7 @@
           </table>
         </div>
       </div>
+
       <div class="box-2" data-aos="fade-up">
         <div class="box box-header">
           <span class="label">月会員</span>
@@ -75,6 +76,7 @@
       </div>
     </div>
 
+    <!--    idでスクロールを定義している-->
     <div id="other" class="container">
       <h2 class="title" data-aos="fade-up">その他メニュー</h2>
       <div class="box-3" data-aos="fade-up">

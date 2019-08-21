@@ -7,15 +7,15 @@
         パーソナルトレーニングスタジオbeeでは事前に目標を設定し、その日のご体調に合わせたトレーニングメニューを知識豊富なトレーナー陣がマンツーマンでご提案します。メニューに悩んでいる方はまずはお気軽にトレーナーへご相談ください。</p>
 
       <div class="columns mt30" data-aos="fade-up">
-        <div class="column">
+        <div class="column personal">
           <a href="#" v-scroll-to="'#personal'" class="button is-outlined"><i
             class="arrow arrow-down"></i>パーソナルトレーニング</a>
         </div>
-        <div class="column">
+        <div class="column other">
           <a href="#" v-scroll-to="'#other'" class="button is-outlined"><i class="arrow arrow-down"></i>その他メニュー</a>
         </div>
-        <div class="column">
-          <a href="#" v-scroll-to="'#other'" class="button is-outlined"><i class="arrow arrow-down"></i>エステメニュー</a>
+        <div class="column est">
+          <a href="#" v-scroll-to="'#este'" class="button is-outlined"><i class="arrow arrow-down"></i>エステメニュー</a>
         </div>
       </div>
     </div>
@@ -45,10 +45,21 @@
     @include tablet() {
       padding-left: 100px;
       padding-right: 100px;
+
+
     }
     @include desktop() {
-      padding-left: 200px;
       padding-right: 200px;
+    }
+  }
+
+  .est {
+    @include tablet() {
+      padding-left: 0;
+    }
+
+    @include desktop() {
+      padding-left: 15px;
     }
   }
 
