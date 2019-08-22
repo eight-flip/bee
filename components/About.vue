@@ -101,7 +101,7 @@
         left: -45px;
       }
     }
-    .link-left, .link-right {
+    .link-left {
       bottom: 55px;
       @include until($for-iPhone5) {
         bottom: 42px;
@@ -109,8 +109,24 @@
       @include tablet() {
         bottom: 95px;
       }
+
     }
 
+    .link-right  {
+      bottom: 55px;
+      margin-left: 30px;
+      @include until($for-iPhone5) {
+        bottom: 42px;
+
+      }
+      @include tablet() {
+        bottom: 95px;
+      }
+
+      @include mobile() {
+        margin-left: 15px;
+      }
+    }
 
 
     .triangle-img {
