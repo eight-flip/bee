@@ -1,7 +1,7 @@
 <template>
-  <section class="section has-text-centered has-background-grey-light">
+  <section id="este" class="section has-text-centered has-background-grey-light">
     <!--    idでスクロールを定義している-->
-    <div id="este" class="container">
+    <div class="container">
       <h2 class="title"  data-aos="fade-up">エステメニュー</h2>
 
       <div class="box-1" data-aos="fade-up">
@@ -13,7 +13,7 @@
             </div>
             <article class="media">
               <div class="media-left">
-                <figure class="este-image1">
+                <figure class="este-image">
                   <img src="../../assets/img/price/IMG_2535@2x.png" alt="Image">
                 </figure>
               </div>
@@ -29,7 +29,7 @@
           </div>
           <table class="table is-bordered is-fullwidth pre-paid">
             <thead>
-            <tr>
+            <tr class="course-bar">
               <th class="course"></th>
               <th class="course">90分コース</th>
               <th class="course">120分コース</th>
@@ -68,7 +68,7 @@
             </div>
             <article class="media">
               <div class="media-left">
-                <figure class="este-image1">
+                <figure class="este-image">
                   <img src="../../assets/img/price/este@2x.png" alt="Image">
                 </figure>
               </div>
@@ -85,7 +85,7 @@
           </div>
           <table class="table is-bordered is-fullwidth pre-paid">
             <thead>
-            <tr>
+            <tr class="course-bar">
               <th class="course"></th>
               <th class="course">90分コース</th>
               <th class="course">120分コース</th>
@@ -125,7 +125,7 @@
             </div>
             <article class="media">
               <div class="media-left">
-                <figure class="este-image1">
+                <figure class="este-image">
                   <img src="../../assets/img/price/グループ 620@2x.png" alt="Image">
                 </figure>
               </div>
@@ -140,9 +140,9 @@
               </div>
             </article>
           </div>
-          <table class="table is-bordered is-fullwidth pre-paid">
+          <table class="table is-bordered is-fullwidth pre-paid order">
             <thead>
-            <tr>
+            <tr class="course-bar">
               <th class="course"></th>
               <th class="course">60分コース</th>
               <th class="course">90分コース</th>
@@ -287,6 +287,17 @@
     margin-left: 1rem;
   }
 
+  /* クラデーション*/
+  .course-bar  {
+    /*background: -webkit-linear-gradient(left, #FF0000, #FFE300);*/
+    background: -webkit-linear-gradient(left, rgba(255, 0, 0, 0.5), rgba(255, 227, 0, 0.5));
+  }
+
+
+  .course {
+    color: #000;
+  }
+
   h3 {
     font-size: 20px;
     font-weight: bold;
@@ -300,10 +311,14 @@
     padding-top: 30px;
   }
 
-  .este-image1 {
+  .este-image {
     width: 400px;
-
+    @include mobile() {
+      width: 320px;
+    }
   }
+
+
 
   .media-right h3 {
     font-size: 20px;
@@ -323,7 +338,7 @@
     vertical-align: middle;
     text-align: center;
     @include mobile() {
-      font-size: 20px;
+      font-size: 16px;
     }
     @include until($for-iPhone5) {
       font-size: 18px;
@@ -336,7 +351,7 @@
     vertical-align: middle;
     text-align: center;
     @include mobile() {
-      font-size: 20px;
+      font-size: 15px;
     }
     @include until($for-iPhone5) {
       font-size: 18px;
