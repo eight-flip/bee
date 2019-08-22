@@ -298,6 +298,12 @@
     color: #000;
   }
 
+  .media-right br {
+    @include mobile() {
+      display: none;
+    }
+  }
+
   h3 {
     font-size: 20px;
     font-weight: bold;

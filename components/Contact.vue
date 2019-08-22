@@ -634,7 +634,7 @@
     line-height: 1.2;
     height: 5em;
     box-shadow: none;
-    width: 280px;
+    width: 100%;
     min-width: initial;
   }
 
