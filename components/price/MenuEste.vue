@@ -200,7 +200,9 @@
         </div>
 
         <div>
-          <img src="../../assets/img/price/Este-traial@2x.png" alt="Image">
+          <a href="/#contact">
+            <img src="../../assets/img/price/Este-traial@2x.png" alt="Image">
+          </a>
         </div>
       </div>
     </div>
