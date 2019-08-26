@@ -84,7 +84,7 @@
     background-color: rgba(0, 0, 0, 0.5);
   }
   .navbar {
-    z-index: 1;
+    z-index: 10;
     height: 54px;
     padding-left: 5px;
     padding-right: 5px;

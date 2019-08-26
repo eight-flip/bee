@@ -1,11 +1,13 @@
 <template>
   <div>
     <Header></Header>
+    <UnderMenu></UnderMenu>
     <nuxt/>
   </div>
 </template>
 <script>
   import Header from '~/components/Header.vue'
+  import UnderMenu from '~/components/UnderMenu.vue'
 
   export default {
     head: {
@@ -14,7 +16,8 @@
       }
     },
     components: {
-      Header
+      Header,
+      UnderMenu
     }
   }
 </script>
@@ -29,6 +32,7 @@
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
+
   }
 
   *,
