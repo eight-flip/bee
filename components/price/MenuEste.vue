@@ -94,23 +94,23 @@
             <tbody>
             <tr>
               <td class="price">1回</td>
+              <td class="price">¥18,000</td>
               <td class="price">¥24,000</td>
-              <td class="price">¥29,500</td>
             </tr>
             <tr>
-              <td class="price">8回</td>
-              <td class="price">¥172,000</td>
-              <td class="price">¥212,400</td>
+              <td class="price">3回</td>
+              <td class="price">¥54,000</td>
+              <td class="price">¥72,000</td>
             </tr>
             <tr>
-              <td class="price">12回</td>
-              <td class="price">¥244,000</td>
-              <td class="price">¥300,900</td>
+              <td class="price">5回</td>
+              <td class="price">¥81,000</td>
+              <td class="price">¥108,000</td>
             </tr>
             <tr>
-              <td class="price">24回</td>
-              <td class="price">¥460,800</td>
-              <td class="price">¥566,400</td>
+              <td class="price">10回</td>
+              <td class="price">¥153,000</td>
+              <td class="price">¥204,000</td>
             </tr>
             </tbody>
           </table>
