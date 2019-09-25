@@ -96,25 +96,23 @@
     }
 
     .link-left {
+      bottom: 55px;
       left: -15px;
       @include tablet() {
         left: -45px;
+        bottom: 95px;
       }
-    }
-    .link-left {
-      bottom: 55px;
       @include until($for-iPhone5) {
         bottom: 42px;
       }
-      @include tablet() {
-        bottom: 95px;
-      }
-
     }
+
+
 
     .link-right  {
       bottom: 55px;
-      margin-left: 30px;
+      right: -40px;
+      /*margin-left: 30px;*/
       @include until($for-iPhone5) {
         bottom: 42px;
 
