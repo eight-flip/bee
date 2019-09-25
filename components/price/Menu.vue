@@ -26,7 +26,7 @@
             <tbody>
               <tr>
                 <th><span class="membership">DAY会員</span><br class="is-hidden-tablet"><span class="note">（平日昼<br>12〜17時限定）</span></th>
-                <td class="https://bulma.io/documentation/elements/box/ce">¥25,000</td>
+                <td class="price">¥25,000</td>
                 <td class="price">¥37,500</td>
               </tr>
               <tr>
