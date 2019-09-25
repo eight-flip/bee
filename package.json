@@ -15,6 +15,8 @@
     "aos": "2.3.4",
     "bulma": "0.7.4",
     "cross-env": "^5.2.0",
+    "eslint-utils": "^1.4.2",
+    "mem": "^5.1.1",
     "node-sass-import": "^2.0.1",
     "nuxt": "^2.4.0",
     "vue-carousel": "0.18.0-alpha",
