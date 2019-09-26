@@ -26,6 +26,14 @@ html, body, button, input, select, textarea {
   font-weight: 500;
 }
 
+@media screen and (max-width: 768px) {
+  .VueCarousel-dot {
+    Width:8px;
+    height:8px;
+  }
+}
+
+
 .navbar-item img {
   max-height: none;
 }

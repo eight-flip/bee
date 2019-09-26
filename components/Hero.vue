@@ -12,10 +12,13 @@
         </picture>
       </slide>
       <slide>
-        <img src="~/assets/img/hero-2.jpg" class="mv-img img-2" alt="top image2">
+        <img src="~/assets/img/1枚目@2x.png" class="mv-img img-2" alt="top image2">
       </slide>
       <slide>
-        <img src="~/assets/img/hero-3.jpg" class="mv-img img-3" alt="top image3">
+        <img src="~/assets/img/2枚目.png" class="mv-img img-2" alt="top image2">
+      </slide>
+      <slide>
+        <img src="~/assets/img/3枚目@2x.png" class="mv-img img-3" alt="top image3">
       </slide>
     </carousel>
 
@@ -65,6 +68,17 @@
 
 <style lang="scss" scoped>
   @import "~assets/scss/_variables.scss";
+
+  /*<!--@media screen and (max-width: 768px){-->*/
+  /*<!--  .mv-img　{-->*/
+  /*<!--    height: calc(100vh - 14.25rem);-->*/
+  /*<!--  }-->*/
+
+  /*<!--  .card {-->*/
+  /*<!--    bottom: -100px;-->*/
+
+  /*<!--  }-->*/
+  /*<!--}-->*/
 
   $t: 0s;
   .card {
@@ -132,6 +146,7 @@
     }
   }
 
+
   #mv.hero {
     position: relative;
 
@@ -141,6 +156,11 @@
       height: calc(100vh - #{$navbar-height});
       object-fit: cover;
       width: 100%;
+
+      @media screen and (max-width: 768px) {
+        height: calc(100vh - 14.25rem);
+      }
+
       @include mobile() {
         &.img-1 {
           object-position: 59%;
@@ -165,6 +185,11 @@
       bottom: 50px;
       left: 0;
       width: calc(100vw - 20px);
+
+      @media screen and (max-width: 768px) {
+        bottom: -100px;
+      }
+
       @include tablet() {
         width: 600px;
         left: 2%;

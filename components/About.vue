@@ -33,6 +33,10 @@
 <style lang="scss" scoped>
   @import "~assets/scss/_variables.scss";
   .section {
+    @media screen and (max-width: 768px) {
+        padding: 150px 15px;
+    }
+
     @include tablet() {
       margin-top: 85px;
     }
