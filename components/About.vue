@@ -149,6 +149,8 @@
       width: 565px;
     }
     @include until($for-iPhone5) {
+
+
       width: 256px;
     }
   }
