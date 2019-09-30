@@ -112,7 +112,7 @@
   @import "~assets/scss/_variables.scss";
 
   .section {
-    background: url('~assets/img/bg-contact.png') no-repeat;
+    background: url('~assets/img/q&a_bgimg.png') no-repeat;
     background-size: cover;
     position: relative;
     padding-bottom: 96px;
