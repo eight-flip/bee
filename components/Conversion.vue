@@ -49,7 +49,7 @@
   @import "~assets/scss/_variables.scss";
   .section {
     padding: 36px 10px;
-    background: url('~assets/img/conversion-bg.jpg') no-repeat;
+    background: url('~assets/img/back_imag_20190930.png') no-repeat;
     /*background-color: rgba(0,0,0,0.8);*/
     background-size: cover;
     position: relative;
