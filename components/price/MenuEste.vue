@@ -3,7 +3,11 @@
     <!--    idでスクロールを定義している-->
     <div class="container">
       <h2 class="title"  data-aos="fade-up">エステメニュー</h2>
-
+      <div class="este-trial">
+        <a href="/#contact">
+          <img src="../../assets/img/price/Este-traial@2x.png" alt="Image">
+        </a>
+      </div>
       <div class="box-1" data-aos="fade-up">
         <div class="este-card">
           <div class="box">
@@ -177,11 +181,11 @@
           </div>
         </div>
 
-        <div class="este-trial">
-          <a href="/#contact">
-            <img src="../../assets/img/price/Este-traial@2x.png" alt="Image">
-          </a>
-        </div>
+<!--        <div class="este-trial">-->
+<!--          <a href="/#contact">-->
+<!--            <img src="../../assets/img/price/Este-traial@2x.png" alt="Image">-->
+<!--          </a>-->
+<!--        </div>-->
       </div>
     </div>
   </section>
@@ -345,6 +349,7 @@
   }
 
   .este-trial {
+    margin-bottom: 70px;
   }
 
 </style>
