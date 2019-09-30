@@ -25,7 +25,7 @@
         <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#studio'" class="navbar-item" @click="toggleNav()"><span>STUDIO</span></a>
         <a v-else href="/#studio" class="navbar-item" @click="toggleNav()"><span>STUDIO</span></a>
 
-        <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#price'" class="navbar-item" @click="toggleNav()"><span>MENU&PRICE</span></a>
+        <a v-if="$nuxt.$route.path == '/'" href="/price"  class="navbar-item" @click="toggleNav()"><span>MENU&PRICE</span></a>
         <a v-else href="/#price" class="navbar-item" @click="toggleNav()"><span>MENU&PRICE</span></a>
 
         <a v-if="$nuxt.$route.path == '/'" href="#" v-scroll-to="'#access'" class="navbar-item" @click="toggleNav()"><span>ACCESS</span></a>
