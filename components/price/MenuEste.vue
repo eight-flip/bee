@@ -144,35 +144,13 @@
             <thead>
             <tr class="course-bar">
               <th class="course"></th>
-              <th class="course">60分コース</th>
-              <th class="course">90分コース</th>
               <th class="course">120分コース</th>
             </tr>
             </thead>
             <tbody>
             <tr>
               <td class="price">1回</td>
-              <td class="price">¥18,000</td>
-              <td class="price">¥24,000</td>
               <td class="price">¥29,500</td>
-            </tr>
-            <tr>
-              <td class="price">8回</td>
-              <td class="price">¥122,400</td>
-              <td class="price">¥163,200</td>
-              <td class="price">¥200,600</td>
-            </tr>
-            <tr>
-              <td class="price">12回</td>
-              <td class="price">¥172,800</td>
-              <td class="price">¥230,400</td>
-              <td class="price">¥283,200</td>
-            </tr>
-            <tr>
-              <td class="price">24回</td>
-              <td class="price">¥324,000</td>
-              <td class="price">¥432,000</td>
-              <td class="price">¥566,400</td>
             </tr>
             </tbody>
           </table>
@@ -199,7 +177,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="este-trial">
           <a href="/#contact">
             <img src="../../assets/img/price/Este-traial@2x.png" alt="Image">
           </a>
@@ -364,6 +342,9 @@
     @include until($for-iPhone5) {
       font-size: 18px;
     }
+  }
+
+  .este-trial {
   }
 
 </style>
