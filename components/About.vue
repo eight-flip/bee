@@ -14,7 +14,7 @@
       <div class="triangle" data-aos="fade-up">
         <img src="~/assets/img/triangle.png" class="bg" alt="menu">
         <a href="#" v-scroll-to="'#price'" class="link-top">
-          <img src="~/assets/img/triangle-top.png" class="triangle-img" alt="menu">
+          <img src="~/assets/img/triangle_top2@2x.png" class="triangle-img" alt="menu">
           <span>メニューはこちら</span>
         </a>
         <a href="#" v-scroll-to="'#studio'" class="link-left">
