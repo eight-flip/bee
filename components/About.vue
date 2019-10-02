@@ -115,7 +115,6 @@
     .link-right  {
       bottom: 55px;
       right: -40px;
-      /*margin-left: 30px;*/
       @include until($for-iPhone5) {
         bottom: 42px;
 
@@ -125,7 +124,7 @@
       }
 
       @include mobile() {
-        margin-left: 15px;
+        margin-right: 25px;
       }
     }
 
