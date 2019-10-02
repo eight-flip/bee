@@ -5,7 +5,6 @@
       <p class="section-subtitle is-4" data-aos="fade-up">ABOUT</p>
 
       <h3 class="title is-3 mt30" data-aos="fade-up">綺麗な施設でさまざまなトレーニングを。エステメニューも充実。</h3>
-
       <p data-aos="fade-up">
         パーソナルトレーニングスタジオBeeではお客様の目標を達成、維持できるようマンツーマンでトレーニングします。知識、経験豊富なトレーナー陣が最適なトレーニング方法でお客様のボディメイクにアプローチします。また、清潔で明るいシャワールームとパウダールームをご用意しております。</p>
       <p data-aos="fade-up" style="margin-top: 8px;">今まで運動が続かなかった方も自分にあったトレーニングで理想のボディを創りあげましょう！</p>
@@ -21,10 +20,10 @@
           <img src="~/assets/img/triangle-left.png" class="triangle-img" alt="menu">
           <span>施設紹介はこちら</span>
         </a>
-        <a href="/price/#este" class="link-right" >
+        <nuxt-link to="/price/#este" class="link-right" >
           <img src="~/assets/img/triangle-right.png" class="triangle-img" alt="menu">
           <span>エステメニュー<br>はこちら</span>
-        </a>
+        </nuxt-link>
       </div>
     </div>
   </section>
