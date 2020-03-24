@@ -35,6 +35,7 @@
             <thead>
             <tr class="course-bar">
               <th class="course"></th>
+              <th class="course">60分コース</th>
               <th class="course">90分コース</th>
               <th class="course">120分コース</th>
             </tr>
@@ -42,21 +43,25 @@
             <tbody>
             <tr>
               <td class="price">1回</td>
-              <td class="price">¥24,000</td>
-              <td class="price">¥29,500</td>
+              <td class="price">¥14,400</td>
+              <td class="price">¥21,600</td>
+              <td class="price">¥28,800</td>
             </tr>
             <tr>
               <td class="price">8回</td>
+              <td class="price"></td>
               <td class="price">¥172,000</td>
               <td class="price">¥212,400</td>
             </tr>
             <tr>
               <td class="price">12回</td>
+              <td class="price"></td>
               <td class="price">¥244,000</td>
               <td class="price">¥300,900</td>
             </tr>
             <tr>
               <td class="price">24回</td>
+              <td class="price"></td>
               <td class="price">¥460,800</td>
               <td class="price">¥566,400</td>
             </tr>
@@ -91,6 +96,7 @@
             <thead>
             <tr class="course-bar">
               <th class="course"></th>
+              <th class="course">60分コース</th>
               <th class="course">90分コース</th>
               <th class="course">120分コース</th>
             </tr>
@@ -98,21 +104,25 @@
             <tbody>
             <tr>
               <td class="price">1回</td>
+              <td class="price">¥9,000</td>
+              <td class="price">¥13,500</td>
               <td class="price">¥18,000</td>
-              <td class="price">¥24,000</td>
             </tr>
             <tr>
               <td class="price">3回</td>
+              <td class="price"></td>
               <td class="price">¥54,000</td>
               <td class="price">¥72,000</td>
             </tr>
             <tr>
               <td class="price">5回</td>
+              <td class="price"></td>
               <td class="price">¥81,000</td>
               <td class="price">¥108,000</td>
             </tr>
             <tr>
               <td class="price">10回</td>
+              <td class="price"></td>
               <td class="price">¥153,000</td>
               <td class="price">¥204,000</td>
             </tr>
@@ -169,12 +179,38 @@
 
             <article class="media other">
               <div class="media-left">
-                <h3>セルライトゼロ10分　¥3,000</h3>
-                <h3>セルキュア　　20分　¥2,000</h3>
+                <h3>セルライトゼロ　10分　¥2,400</h3>
+                <h3>ラジオ波　　　　10分　¥2,000</h3>
+                <h3>マッサージ　　　10分　¥1,500</h3>
+                <h3>キャビテーション10分　¥2,000</h3>
               </div>
               <div class="media-right">
-                <h3>マッサージ追加20分　¥4,000</h3>
-                <h3>生ゲルフェイスパック ¥3,000</h3>
+                <h3>セルキュア　　　20分　¥2,000</h3>
+                <h3>マッサージ追加　20分　¥4,000</h3>
+                <h3>生ゲルフェイスパック　¥3,000</h3>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="este-card">
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-header-title">新メニュー</h3>
+              <div class="border"></div>
+            </div>
+
+            <article class="media other">
+              <div class="media-left">
+                <h3>キャビテーション×ラジオ波　60分　¥12,000</h3>
+                <h3>　　　　　　　　　　　　　 90分　¥18,000</h3>
+                <h3>　　　　　　　　　　　　　120分　¥24,000</h3>
+              </div>
+              <div class="media-right">
+                <h3>サイクロン(吸引)×ラジオ波　60分　¥12,000</h3>
+                <h3>　　　　　　　　　　　　　 90分　¥18,000</h3>
+                <h3>　　　　　　　　　　　　　 120分　¥24,000</h3>
               </div>
             </article>
 

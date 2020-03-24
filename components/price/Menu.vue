@@ -74,6 +74,47 @@
           </table>
         </div>
       </div>
+
+      <div class="box-3" data-aos="fade-up">
+        <div class="box box-header">
+          <span class="label">月会員</span>
+          <h3>Hip & Leg Shape upコース<span class="num">45</span>分パーソナルトレーニング</h3>
+          <p>＋ 20分有酸素</p>
+        </div>
+        <div class="box box-body">
+          <table class="table is-bordered is-fullwidth">
+            <thead>
+              <tr>
+                <th class="none">
+                  <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10">
+                    <line fill="none" stroke="#e3e3e3" stroke-width="0.1" stroke-miterlimit="10" x1="0" y1="10" x2="10"
+                          y2="0"/>
+                  </svg>
+                </th>
+                <th class="times"><span class="num">4</span>回/月</th>
+                <th class="times"><span class="num">6</span>回/月</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th><span class="membership">DAY会員</span><br class="is-hidden-tablet"><span class="note">（平日昼<br>12〜17時限定）</span></th>
+                <td class="price">¥30,000</td>
+                <td class="price">¥56,000</td>
+              </tr>
+              <tr>
+                <th><span class="membership">NIGHT会員</span><br class="is-hidden-tablet"><span class="note">（平日夜<br>17〜21時限定）</span></th>
+                <td class="price">¥34,000</td>
+                <td class="price">¥64,000</td>
+              </tr>
+              <tr>
+                <th><span class="membership">FREE30会員</span><br class="is-hidden-tablet"><span class="note">（終日利用可能）</span></th>
+                <td class="price">¥38,000</td>
+                <td class="price">¥72,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
 
     <!--    idでスクロールを定義している-->
@@ -159,7 +200,7 @@
     }
   }
 
-  .box-1, .box-2 {
+  .box-1, .box-2 , .box-3 {
     margin-top: 36px;
   }
   .box-header {
