@@ -4,8 +4,8 @@
     <div class="container">
       <h2 class="title"  data-aos="fade-up">エステメニュー</h2>
       <div class="este-trial">
-        <a href="/#contact">
-          <img src="../../assets/img/price/Este-traial@2x.png" alt="Image">
+        <a href="https://mitsuraku.jp/pm/online/index/q6l7t8/eNpLtDK0qi62MjSyUsovKMnMzytJTI_PTFGyLrYys1IyMjI3MzVVsq4FXDD09wug">
+          <img src="../../assets/img/price/Este-traial@3x.png" alt="Image">
         </a>
       </div>
       <div class="box-1" data-aos="fade-up">
@@ -68,6 +68,85 @@
             </tbody>
           </table>
         </div>
+
+<!-- 　　　　　コース追加 -->
+        <div class="este-card">
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-header-title">キャビテーション×ラジオ波</h3>
+              <div class="border"></div>
+            </div>
+            <article>
+              <div>
+                <p style="text-align: center;">
+                  体温を上げ、皮下脂肪を温めながら<br>
+                  超音波で脂肪細胞を液状化させ、
+                  脂肪をドロドロに溶かします。<br>
+                  ドロドロにになった脂肪をハンドで流していきます。<br>
+                </p>
+              </div>
+            </article>
+          </div>
+          <table class="table is-bordered is-fullwidth pre-paid">
+            <thead>
+            <tr class="course-bar">
+              <th class="course"></th>
+              <th class="course">60分コース</th>
+              <th class="course">90分コース</th>
+              <th class="course">120分コース</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td class="price">1回</td>
+              <td class="price">¥12,000</td>
+              <td class="price">¥18,000</td>
+              <td class="price">¥24,000</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- ここまで -->
+
+        <!-- 新メニュー追加 -->
+        <div class="este-card">
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-header-title">サイクロン(吸引)×ラジオ波</h3>
+              <div class="border"></div>
+            </div>
+            <article>
+              <div>
+                <p style="text-align: center">
+                  体温を上げ皮下脂肪を温めながら、<br>
+                  こびりついた脂肪、硬くなった脂肪を
+                  やわらかくしていきます。<br>
+                  ハンドでしっかり流します。<br>
+                  肩こり、腰痛などの筋肉疲労にもおススメです。<br>
+                </p>
+              </div>
+            </article>
+          </div>
+          <table class="table is-bordered is-fullwidth pre-paid">
+            <thead>
+            <tr class="course-bar">
+              <th class="course"></th>
+              <th class="course">60分コース</th>
+              <th class="course">90分コース</th>
+              <th class="course">120分コース</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td class="price">1回</td>
+              <td class="price">¥12,000</td>
+              <td class="price">¥18,000</td>
+              <td class="price">¥24,000</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- ここまで！ -->
 
         <div class="este-card">
           <div class="box">
@@ -179,22 +258,22 @@
 
             <article class="media other">
               <div class="media-left">
-                <h3>セルライトゼロ　10分　¥2,400</h3>
-                <h3>ラジオ波　　　　10分　¥2,000</h3>
-                <h3>マッサージ　　　10分　¥1,500</h3>
-                <h3>キャビテーション10分　¥2,000</h3>
+                <h3>セルライトゼロ　   　10分  ¥2,400</h3>
+                <h3>キャビテーション   　10分  ¥2,000</h3>
+                <h3>サイクロン（吸引）   10分  ¥2,000</h3>
               </div>
               <div class="media-right">
-                <h3>セルキュア    20分 ¥2,000</h3>
-                <h3>マッサージ追加 20分 ¥4,000</h3>
-                <h3>生ゲルフェイスパック ¥3,000</h3>
+                <!-- 空欄がうまくいかないので取り急ぎ&nbsp;で対応 -->
+                <h3>マッサージ追加       10分　¥1,500</h3>
+                <h3>セルキュア&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10分　¥2,000</h3>
+                <h3>生ゲルフェイスパック &nbsp;&nbsp;¥3,000</h3>
               </div>
             </article>
 
           </div>
         </div>
 
-        <div class="este-card">
+        <!-- <div class="este-card">
           <div class="box">
             <div class="box-header">
               <h3 class="box-header-title">新メニュー</h3>
@@ -215,7 +294,7 @@
             </article>
 
           </div>
-        </div>
+        </div> -->
 
 <!--        <div class="este-trial">-->
 <!--          <a href="/#contact">-->
