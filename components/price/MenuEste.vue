@@ -47,24 +47,6 @@
               <td class="price">¥21,600</td>
               <td class="price">¥28,800</td>
             </tr>
-            <tr>
-              <td class="price">8回</td>
-              <td class="price"></td>
-              <td class="price">¥172,000</td>
-              <td class="price">¥212,400</td>
-            </tr>
-            <tr>
-              <td class="price">12回</td>
-              <td class="price"></td>
-              <td class="price">¥244,000</td>
-              <td class="price">¥300,900</td>
-            </tr>
-            <tr>
-              <td class="price">24回</td>
-              <td class="price"></td>
-              <td class="price">¥460,800</td>
-              <td class="price">¥566,400</td>
-            </tr>
             </tbody>
           </table>
         </div>
@@ -187,24 +169,6 @@
               <td class="price">¥13,500</td>
               <td class="price">¥18,000</td>
             </tr>
-            <tr>
-              <td class="price">3回</td>
-              <td class="price"></td>
-              <td class="price">¥54,000</td>
-              <td class="price">¥72,000</td>
-            </tr>
-            <tr>
-              <td class="price">5回</td>
-              <td class="price"></td>
-              <td class="price">¥81,000</td>
-              <td class="price">¥108,000</td>
-            </tr>
-            <tr>
-              <td class="price">10回</td>
-              <td class="price"></td>
-              <td class="price">¥153,000</td>
-              <td class="price">¥204,000</td>
-            </tr>
             </tbody>
           </table>
         </div>
@@ -264,9 +228,11 @@
               </div>
               <div class="media-right">
                 <!-- 空欄がうまくいかないので取り急ぎ&nbsp;で対応 -->
-                <h3>マッサージ追加       10分　¥1,500</h3>
-                <h3>セルキュア&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10分　¥2,000</h3>
-                <h3>生ゲルフェイスパック &nbsp;&nbsp;¥3,000</h3>
+                <h3>生ゲルフェイスパック  　¥3,000</h3>
+                <h3>マッサージ追加　   　10分  ¥1,500</h3>
+                <h3>セルキュア　　　   　10分  ¥2,000</h3>
+                <!-- <h3>セルキュア&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10分　¥2,000</h3>
+                <h3>生ゲルフェイスパック &nbsp;&nbsp;¥3,000</h3> -->
               </div>
             </article>
 
@@ -344,6 +310,10 @@
     @include mobile() {
       padding-right: 28px;
     }
+
+    @include mq(sm) {
+      padding-right: 0px;
+    }
   }
 
   .title {
@@ -383,7 +353,14 @@
   }
 
   .media-right {
-    margin-left: 1rem;
+    @include mobile() {
+      margin-left: 1rem;
+    }
+
+    @include mq(sm) {
+      margin-left: 0rem;
+      margin-right: 1rem;
+    }
   }
 
   /* クラデーション*/

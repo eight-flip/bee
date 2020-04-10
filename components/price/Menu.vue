@@ -25,7 +25,7 @@
             </thead>
             <tbody>
               <tr>
-                <th><span class="membership">DAY会員</span><br class="is-hidden-tablet"><span class="note">（平日昼<br>12〜17時限定）</span></th>
+                <th><span class="membership">DAY会員</span><br class="is-hidden-tablet"><span class="note">（平日昼<br>9〜17時限定）</span></th>
                 <td class="price">¥25,000</td>
                 <td class="price">¥37,500</td>
               </tr>
@@ -97,7 +97,7 @@
             </thead>
             <tbody>
               <tr>
-                <th><span class="membership">DAY会員</span><br class="is-hidden-tablet"><span class="note">（平日昼<br>12〜17時限定）</span></th>
+                <th><span class="membership">DAY会員</span><br class="is-hidden-tablet"><span class="note">（平日昼<br>9〜17時限定）</span></th>
                 <td class="price">¥30,000</td>
                 <td class="price">¥56,000</td>
               </tr>
