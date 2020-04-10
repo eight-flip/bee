@@ -229,10 +229,10 @@
               <div class="media-right">
                 <!-- 空欄がうまくいかないので取り急ぎ&nbsp;で対応 -->
                 <h3>生ゲルフェイスパック  　¥3,000</h3>
-                <h3>マッサージ追加　   　10分  ¥1,500</h3>
-                <h3>セルキュア　　　   　10分  ¥2,000</h3>
-                <!-- <h3>セルキュア&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10分　¥2,000</h3>
-                <h3>生ゲルフェイスパック &nbsp;&nbsp;¥3,000</h3> -->
+                <!-- <h3>マッサージ追加　   　10分  ¥1,500</h3>
+                <h3>セルキュア　　　   　10分  ¥2,000</h3> -->
+                <h3>セルキュア&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10分　¥2,000</h3>
+                <h3>生ゲルフェイスパック &nbsp;&nbsp;¥3,000</h3>
               </div>
             </article>
 
@@ -299,10 +299,16 @@
 
       .media-left {
         flex: 1 0 300px;
+        @include mq(sm) {
+          text-align: left;
+        }
       }
 
       .media-right {
         flex: 1 0 300px;
+        @include mq(sm) {
+          text-align: left;
+        }
       }
     }
 
