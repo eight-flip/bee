@@ -299,27 +299,21 @@
 
       // .media-left {
       //   flex: 1 0 300px;
-      //   @include mq(sm) {
-      //     text-align: left;
-      //   }
       // }
 
       // .media-right {
       //   flex: 1 0 300px;
-      //   @include mq(sm) {
-      //     text-align: left;
-      //   }
       // }
     }
 
   .media-right h3 {
-    @include mobile() {
-      padding-right: 28px;
-    }
+    padding-right: 28px;
 
-    @include mq(sm) {
+    @include mobile() {
+      // padding-right: 28px;
       padding-right: 0px;
     }
+
   }
 
   .title {
@@ -359,13 +353,14 @@
   }
 
   .media-right {
-    @include mobile() {
-      margin-left: 1rem;
-    }
+    // @include mobile() {
+    //   margin-left: 1rem;
+    // }
 
-    @include mq(sm) {
+    @include mobile() {
       margin-left: 0rem;
       margin-right: 1rem;
+      text-align: left;
     }
   }
 
@@ -402,7 +397,7 @@
   .este-image {
     width: 400px;
     @include mobile() {
-      width: 320px;
+      width: 100%;
     }
   }
 
