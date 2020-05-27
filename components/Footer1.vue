@@ -39,6 +39,39 @@
             <p></p>
           </div>
 　　　　<!--    ここまで！！    -->
+
+        <div class="column has-text-left is-flex-end pc_sns">
+          <div class="instagram-heading">
+            <a><img src="~/assets/img/arrow1.png" class="arrow-img"><span>Instagram</span></a>
+          </div>
+          <a href="https://www.instagram.com/bee_personal_official/" target="_blank">
+            <img src="~/assets/img/ig.png" class="sns" alt="instagram">
+            <span style="display:inline-block;" class="is-size-7">Bee（ジム）<br>はこちら</span>
+          </a>
+          <br>
+          <a href="https://www.instagram.com/sweethoney_official/" target="_blank">
+            <img src="~/assets/img/ig.png" class="sns" alt="instagram">
+            <span style="display:inline-block;" class="is-size-7">SweetHoney<br>（エステ）はこちら</span>
+          </a>
+        </div>
+
+        <div class="column has-text-left pc_sns">
+          <div class="line-heading">
+            <a><img src="~/assets/img/arrow1.png" class="arrow-img"><span>LINE@</span></a>
+          </div>
+          <p class="is-size-7">Bee お得なジム情報</p>
+          <a href="http://nav.cx/apINJvU" target="_blank" class="line" style="margin-bottom: 0;">
+            <img src="~/assets/img/line@.png">
+          </a>
+          <p class="is-size-7">SweetHoney 最新エステ情報</p>
+          <a href="https://lin.ee/A9kj7ew" target="_blank" class="line" style="margin-bottom: 0;">
+            <img src="~/assets/img/line@.png">
+          </a>
+          <br>
+        </div>
+
+    <div class="clearfix">
+      <div class="sp_sns">
         <div class="column has-text-left is-flex-end">
           <div class="instagram-heading">
             <a><img src="~/assets/img/arrow1.png" class="arrow-img"><span>Instagram</span></a>
@@ -48,7 +81,7 @@
             <span style="display:inline-block;" class="is-size-7">Bee（ジム）<br>はこちら</span>
           </a>
           <br>
-          <a href="https://www.instagram.com/sweethoney_kudanshita/" target="_blank">
+          <a href="https://www.instagram.com/sweethoney_official/" target="_blank">
             <img src="~/assets/img/ig.png" class="sns" alt="instagram">
             <span style="display:inline-block;" class="is-size-7">SweetHoney<br>（エステ）はこちら</span>
           </a>
@@ -58,16 +91,29 @@
           <div class="line-heading">
             <a><img src="~/assets/img/arrow1.png" class="arrow-img"><span>LINE@</span></a>
           </div>
-          <p class="is-size-7">お得なジム/最新エステ情報は<br>こちらです</p>
-          <a href="http://nav.cx/apINJvU" target="_blank" class="line">
+          <p class="is-size-7">Bee お得なジム情報</p>
+          <a href="http://nav.cx/apINJvU" target="_blank" class="line" style="margin-bottom: 0;">
+            <img src="~/assets/img/line@.png">
+          </a>
+          <p class="is-size-7">SweetHoney 最新エステ情報</p>
+          <a href="https://lin.ee/A9kj7ew" target="_blank" class="line" style="margin-bottom: 0;">
             <img src="~/assets/img/line@.png">
           </a>
           <br>
-
-
         </div>
+      </div>
 <!--        ここまで-->
+        <div class="colum sp_youtube">
+          <div class="line-heading">
+            <a href="https://www.youtube.com/channel/UC8sl4kqx7pTeypVKXt_ZEyA" target="_blank"><img src="~/assets/img/youtube_icon.png" class="youtube-img"><span class="is-size-7 youtube-text">チャンネル登録はこちら</span></a>
+          </div>
+        </div>
+      </div>
+
         <div class="column">
+          <div class="line-heading pc_youtube">
+            <a href="https://www.youtube.com/channel/UC8sl4kqx7pTeypVKXt_ZEyA" target="_blank"><img src="~/assets/img/youtube_icon.png" class="youtube-img"><span class="is-size-7 youtube-text">チャンネル登録はこちら</span></a>
+          </div>
           <img src="~/assets/img/logo-footer.png" class="logo-footer" alt="footer logo">
         </div>
       </div>
@@ -151,6 +197,27 @@
     margin-bottom: 10px;
   }
 
+  .clearfix{
+    display: none;
+  }
+
+  .sp_sns{
+    display: none;
+  }
+
+  .youtube-img{
+    height: 24px;
+  }
+
+  .youtube-text{
+    display: block;
+    text-decoration: underline;
+  }
+
+  .sp_youtube{
+    display: none;
+  }
+
   @include mobile() {
     .logo-footer {
       width: 240px;
@@ -165,6 +232,38 @@
 
     .white-border {
       border-bottom: solid 1px #fff;
+    }
+
+    .clearfix{
+      display: block;
+      padding-top: 20px;
+    }
+
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .pc_sns{
+      display: none;
+    }
+
+    .sp_sns{
+      display: block;
+      width: 60%;
+      float: left;
+    }
+
+    .sp_youtube{
+      display: block;
+      width: 40%;
+      float: left;
+      margin-top: 20px;
+    }
+
+    .pc_youtube{
+      display: none;
     }
   }
 
