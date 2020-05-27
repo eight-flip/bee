@@ -47,7 +47,7 @@
   @media (max-width: 768px) {
     .container {
       p{
-        line-height: 30px;
+        line-height: 25px;
       }
     }
   }
