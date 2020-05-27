@@ -1,12 +1,12 @@
 <template>
- <nav class="navbar">
-   <div class="container">
-     当サービスがメディアに掲載されました！
-     <a class="text" href="https://gym.job-asta.com/2019/07/30/bee-interview/">
-       詳しくはこちら
-     </a>
-   </div>
- </nav>
+  <nav class="navbar">
+    <div class="container">
+      <p clas="news-text">当サービスがメディアに掲載されました！</p>
+      <a class="text" href="https://gym.job-asta.com/2019/07/30/bee-interview/">
+        詳しくはこちら
+      </a>
+    </div>
+  </nav>
 </template>
 
 
@@ -33,10 +33,22 @@
     display: inline-block;
     color: #fff;
 
-
     .text {
       color: #fff;
       border-bottom: 1px solid #fff
+    }
+
+    p{
+      display: inline;
+      line-height: 40px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      p{
+        line-height: 30px;
+      }
     }
   }
 
